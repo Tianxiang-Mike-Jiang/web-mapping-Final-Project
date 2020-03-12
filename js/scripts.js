@@ -17,8 +17,8 @@ map.addControl(new mapboxgl.NavigationControl());
 nbastadiumData.forEach(function(nbastadiumEntry) {
 
   new mapboxgl.Marker()
-    .setLngLat([nbastaidumEntry.longitude, nbastaidumEntry.latitude])
+    .setLngLat([nbastadiumEntry.longitude, nbastadiumEntry.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25}) // add popups
-     .setHTML(`Want to learn more about <b>${nbastaidumEntry.StaidumName}</b>, Please visit <a href="http://www.${nbastaidumEntry.Website}">${apartmentEntry.Website}</a>`))
+     .setHTML(`Want to learn more about <b>${nbastadiumEntry.Team}</b>, Please visit <a href="http://www.${nbastadiumEntry.website}">${nbastadiumEntry.website}</a>`))
     .addTo(map);
 })
