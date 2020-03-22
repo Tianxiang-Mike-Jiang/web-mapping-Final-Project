@@ -7,15 +7,22 @@ var geojson = {
 'type': 'Feature',
   geometry: {
       type: 'Point',
-      coordinates: [-73.9427712,40.7521681]
+      coordinates: [-84.3985184,33.7572935]
 },
 properties: {
   "StadiumName": "State Farm Arena",
   "website": "statefarmarena.com",
-  "Team": "Atlanta Hawks"
-
-    }
-}]}
+  "Team": "Atlanta Hawks",
+  icon: {
+         iconUrl: 'http://oit2.sps.nyu.edu/~tj986/Markericon/Atlanta%20Hawks.png',
+         iconSize: [50, 50], // size of the icon
+         iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+         popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
+         className: 'dot'
+       }
+       }
+     }
+   ]}
 
 var initialCenterPoint = [-101.1875746, 39.1911332]
 var initialZoom =3.3
@@ -33,7 +40,7 @@ map.addControl(new mapboxgl.NavigationControl());
 geojson.features.forEach(function(marker) {
 var el = document.createElement('div');
 el.className = 'marker';
-el.style.backgroundImage = 'url( + http://oit2.sps.nyu.edu/~tj986/Markericon/58419c7ba6515b1e0ad75a62.png + )'
+
 
 
 new mapboxgl.Marker(el)
