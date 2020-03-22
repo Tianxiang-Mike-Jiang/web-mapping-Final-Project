@@ -35,6 +35,11 @@ h3 {
   padding: 15px;
   min-height: 150px;
 }
+
+#logo{  
+  padding: 15px;
+  min-height: 150px;}
+
 #sidebar {
   position: absolute;
   left: 0;
@@ -48,13 +53,4 @@ h3 {
 }
 #fill-color{
   background-color: #2F4F4F
-}
-
-.marker {
-
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
 }
