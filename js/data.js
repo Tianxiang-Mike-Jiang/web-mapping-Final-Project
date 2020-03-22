@@ -71,8 +71,8 @@ var nbastadiumData= [
   },
   {
     "StadiumName": "Toyota Center",
-    "longitude": -93.5971038,
-    "latitude": 34.9922688,
+    "longitude": -95.3642945,
+    "latitude": 29.750765,
     "website": "houstontoyotacenter.com",
     "Team": "Houston Rockets"
   },
