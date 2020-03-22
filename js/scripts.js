@@ -5,39 +5,17 @@ var geojson = {
 'features': [
 {
 'type': 'Feature',
-'properties': {
-'message': 'Atlanta Hawks',
-'iconSize': [60, 60]
+  geometry: {
+      type: 'Point',
+      coordinates: [-73.9427712,40.7521681]
 },
-'geometry': {
-'type': 'Point',
-'coordinates': [-73.9427712,40.7521681]
-}
-},
-{
-'type': 'Feature',
-'properties': {
-'message': 'Bar',
-'iconSize': [50, 50]
-},
-'geometry': {
-'type': 'Point',
-'coordinates': [-61.2158203125, -15.97189158092897]
-}
-},
-{
-'type': 'Feature',
-'properties': {
-'message': 'Baz',
-'iconSize': [40, 40]
-},
-'geometry': {
-'type': 'Point',
-'coordinates': [-63.29223632812499, -18.28151823530889]
-}
-}
-]
-};
+properties: {
+  "StadiumName": "State Farm Arena",
+  "website": "statefarmarena.com",
+  "Team": "Atlanta Hawks"
+
+    }
+}]}
 
 var initialCenterPoint = [-101.1875746, 39.1911332]
 var initialZoom =3.3
@@ -55,19 +33,12 @@ map.addControl(new mapboxgl.NavigationControl());
 geojson.features.forEach(function(marker) {
 var el = document.createElement('div');
 el.className = 'marker';
-el.style.backgroundImage =
-'url(https://placekitten.com/g/' +
-marker.properties.iconSize.join('/') +
-'/)';
-el.style.width = marker.properties.iconSize[0] + 'px';
-el.style.height = marker.properties.iconSize[1] + 'px';
+el.style.backgroundImage = 'url( + http://oit2.sps.nyu.edu/~tj986/Markericon/58419c7ba6515b1e0ad75a62.png + )'
 
-el.addEventListener('click', function() {
-window.alert(marker.properties.message);
-});
 
-// add marker to map
 new mapboxgl.Marker(el)
 .setLngLat(marker.geometry.coordinates)
+.setPopup(new mapboxgl.Popup({ offset: 25}) // add popups
+     .setHTML(`Want to learn more about <b>${marker.properties.Team}</b>, Please visit <a href="http://www.${marker.properties.website}">${marker.properties.website}</a>`))
 .addTo(map);
 });
