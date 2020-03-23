@@ -27,7 +27,7 @@ h4{
 h5{font-family: Georgia;
 font-size: 20px}
 .flyto-button {
-  background: #2F4F4F;
+  background: #4682b4;
   color: #FFF;
   padding: 11px;
   border: none;
@@ -38,7 +38,7 @@ font-size: 20px}
   color: #FFF;
 }
 #information {
-  background: #696969;
+  background: #B0C4DE;
   padding: 15px;
   min-height: 150px;
 }
@@ -57,21 +57,21 @@ font-size: 20px}
   top: 0;
   bottom: 0;
   width: 350px;
-  background-color: #2F4F4F;
+  background-color: #4682b4;
   color: #FFF;
   padding: 25px;
   box-sizing: border-box;
 }
 #fill-color{
-  background-color: #2F4F4F
+  background-color: #4682b4
 }
 
 .filter-group {
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 font-weight: 600;
 position: absolute;
-top: 10px;
-right: 10px;
+Bottom: 40px;
+right: 20px;
 z-index: 1;
 border-radius: 3px;
 width: 120px;
@@ -92,7 +92,7 @@ display: none;
 }
 
 .filter-group input[type='checkbox'] + label {
-background-color: #3386c0;
+background-color: #4682b4;
 display: block;
 cursor: pointer;
 padding: 10px;
@@ -100,13 +100,13 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .filter-group input[type='checkbox'] + label {
-background-color: #3386c0;
+background-color: #4682b4;
 text-transform: capitalize;
 }
 
 .filter-group input[type='checkbox'] + label:hover,
 .filter-group input[type='checkbox']:checked + label {
-background-color: #4ea0da;
+background-color: #4682b4;
 }
 
 .filter-group input[type='checkbox']:checked + label:before {

@@ -12,11 +12,19 @@ var map = new mapboxgl.Map(initOptions);
 
 map.addControl(new mapboxgl.NavigationControl());
 
+var filterGroup = document.getElementById('filter-group');
+
+map.on('load', function() {
+// Add a GeoJSON source containing place coordinates and information.
+map.addSource('nbastadiumData', {
+'type': 'geojson',
+'data': nbastadiumData
+});
 
 nbastadiumData.forEach(function(nbastadiumEntry) {
 
 
-  new mapboxgl.Marker()
+new mapboxgl.Marker()
       .setLngLat([nbastadiumEntry.longitude, nbastadiumEntry.latitude])
       .setPopup(new mapboxgl.Popup({ offset: 25}) // add popups
        .setHTML(`<div id='logo' style="background-image:url('${nbastadiumEntry.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
@@ -29,7 +37,47 @@ nbastadiumData.forEach(function(nbastadiumEntry) {
                 <b>Conference:</b> ${nbastadiumEntry.Conference}<br>
                 <div id='image-zoom' style="background-image:url('${nbastadiumEntry.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>`))
       .addTo(map);
-  })
+
+var symbol = nbastadiumEntry['Conference'];
+var layerID = 'poi-' + symbol;
+
+// Add a layer for this symbol type if it hasn't been added already.
+if (!map.getLayer(layerID)) {
+map.addLayer({
+'id': layerID,
+'type': 'symbol',
+'source': 'nbastadiumData',
+'layout': {
+'icon-image': symbol + '-15',
+'icon-allow-overlap': true
+},
+'filter': ['==', 'Conference', symbol]
+});
+
+// Add checkbox and label elements for the layer.
+var input = document.createElement('input');
+input.type = 'checkbox';
+input.id = layerID;
+input.checked = true;
+filterGroup.appendChild(input);
+
+var label = document.createElement('label');
+label.setAttribute('for', layerID);
+label.textContent = symbol;
+filterGroup.appendChild(label);
+
+// When the checkbox changes, update the visibility of the layer.
+input.addEventListener('change', function(e) {
+map.setLayoutProperty(
+layerID,
+'visibility',
+e.target.checked ? 'visible' : 'none'
+);
+});
+}
+});
+});
+
 
   $('#ATL').on('click', function() {
     map.flyTo({
@@ -71,53 +119,3 @@ nbastadiumData.forEach(function(nbastadiumEntry) {
       zoom: 5.8
     })
   })
-
-  var filterGroup = document.getElementById('filter-group');
-
-  map.on('load', function() {
-// Add a GeoJSON source containing place coordinates and information.
-map.addSource('nbastadiumData', {
-'type': 'geojson',
-'data': nbastadiumData
-});
-
-nbastadiumData.forEach(function(nbastadiumEntry) {
-var symbol = nbastadiumEntry['Conference'];
-var layerID = 'poi-' + symbol;
-
-// Add a layer for this symbol type if it hasn't been added already.
-if (!map.getLayer(layerID)) {
-map.addLayer({
-'id': layerID,
-'type': 'symbol',
-'source': 'nbastadiumData',
-'layout': {
-'icon-image': symbol + '-15',
-'icon-allow-overlap': true
-},
-'filter': ['==', 'Conference', symbol]
-});
-
-// Add checkbox and label elements for the layer.
-var input = document.createElement('input');
-input.type = 'checkbox';
-input.id = layerID;
-input.checked = true;
-filterGroup.appendChild(input);
-
-var label = document.createElement('label');
-label.setAttribute('for', layerID);
-label.textContent = symbol;
-filterGroup.appendChild(label);
-
-// When the checkbox changes, update the visibility of the layer.
-input.addEventListener('change', function(e) {
-map.setLayoutProperty(
-layerID,
-'visibility',
-e.target.checked ? 'visible' : 'none'
-);
-});
-}
-});
-});
