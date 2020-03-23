@@ -20,8 +20,11 @@ nbastadiumData.forEach(function(nbastadiumEntry) {
       .setLngLat([nbastadiumEntry.longitude, nbastadiumEntry.latitude])
       .setPopup(new mapboxgl.Popup({ offset: 25}) // add popups
        .setHTML(`<div id='logo' style="background-image:url('${nbastadiumEntry.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+
                 <b>${nbastadiumEntry.StadiumName}</b> <br>
+                <b>Built Year:</b><br>
                 <b>NBA Team:</b>${nbastadiumEntry.Team}<br>
-                <b>Website:</b> <a href="http://www.${nbastadiumEntry.website}">${nbastadiumEntry.website}</a>`))
+                <b>Website</b> <br><a href="http://www.${nbastadiumEntry.website}">${nbastadiumEntry.website}</a><br>
+                <b>Divisions:</b> ${nbastadiumEntry.Divisions}`))
       .addTo(map);
   })
