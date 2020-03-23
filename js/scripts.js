@@ -22,10 +22,52 @@ nbastadiumData.forEach(function(nbastadiumEntry) {
        .setHTML(`<div id='logo' style="background-image:url('${nbastadiumEntry.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
                 <b>${nbastadiumEntry.StadiumName}</b> <br>
-                <b>Built Year:</b>${nbastadiumEntry.Year}<br>
-                <b>NBA Team:</b>${nbastadiumEntry.Team}<br>
-                <b>Website</b> <br><a href="http://www.${nbastadiumEntry.website}">${nbastadiumEntry.website}</a><br>
+                <b>Built Year:</b> ${nbastadiumEntry.Year}<br>
+                <b>NBA Team:</b> ${nbastadiumEntry.Team}<br>
+                <b>Team Website</b> <br><a href="http://www.${nbastadiumEntry.website}">${nbastadiumEntry.website}</a><br>
                 <b>Divisions:</b> ${nbastadiumEntry.Divisions}<br>
+                <b>Conference:</b> ${nbastadiumEntry.Conference}<br>
                 <div id='image-zoom' style="background-image:url('${nbastadiumEntry.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>`))
       .addTo(map);
+  })
+
+  $('#ATL').on('click', function() {
+    map.flyTo({
+      center: [-75.4187605,43.2656557],
+      zoom: 6
+    })
+  })
+  $('#CEN').on('click', function() {
+    map.flyTo({
+      center: [-85.660679,41.3064537],
+      zoom: 6
+    })
+  })
+
+  $('#SE').on('click', function() {
+    map.flyTo({
+      center: [-77.5594031,32.5384074],
+      zoom: 5.2
+    })
+  })
+
+  $('#NW').on('click', function() {
+    map.flyTo({
+      center: [-104.3326424,45.5561508],
+      zoom: 4.5
+    })
+  })
+
+  $('#PAC').on('click', function() {
+    map.flyTo({
+      center: [-117.0973915,35.107],
+      zoom: 5.6
+    })
+  })
+
+  $('#SW').on('click', function() {
+    map.flyTo({
+      center: [-94.4470076,30.418],
+      zoom: 5.8
+    })
   })
