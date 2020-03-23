@@ -69,7 +69,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/nuggets/",
     "Team": "Denver Nuggets",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Denver%20Nuggets.png",
-    "Conference": "East"
+    "Conference": "West"
   },
   {
     "StadiumName": "The Palace of Auburn Hills",
@@ -78,7 +78,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/pistons/",
     "Team": "Detroit Pistons",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Detroit%20Pistons.png",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "Chase Center",
@@ -87,7 +87,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/warriors/",
     "Team": "Golden State Warriors",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Golden%20State%20Warriors.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Toyota Center",
@@ -96,7 +96,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/rockets/",
     "Team": "Houston Rockets",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Houston%20Rockets.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Bankers Life Fieldhouse",
@@ -105,7 +105,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/pacers/",
     "Team": "Indiana Pacers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Indiana%20Pacers.png",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "STAPLES Center",
@@ -114,7 +114,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/clippers/",
     "Team": "Los Angeles Clippers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Clippers.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "STAPLES Center",
@@ -123,7 +123,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/lakers/",
     "Team": "Los Angeles Lakers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Lakers.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "FedExForum",
@@ -132,7 +132,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/grizzlies/",
     "Team": "Memphis Grizzlies",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Memphis%20Grizzlies.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "American Airlines Arena",
@@ -141,7 +141,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/heat/",
     "Team": "Miami Heat",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Miami%20Heat.gif",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "Fiserv Forum",
@@ -150,7 +150,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/bucks/",
     "Team": "Milwaukee Bucks",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Milwaukee%20Bucks.png",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "Target Center",
@@ -159,7 +159,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/timberwolves/",
     "Team": "Minnesota Timberwolves",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Minnesota%20Timberwolves.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Smoothie King Center",
@@ -168,7 +168,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/pelicans/",
     "Team": "New Orleans Pelicans",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/New%20Orleans%20Pelicans.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Madison Square Garden",
@@ -177,7 +177,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/knicks/",
     "Team": "New York Knicks",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/New%20York%20Knicks.gif",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "Chesapeake Energy Arena",
@@ -186,7 +186,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/thunder/",
     "Team": "Oklahoma City Thunder",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Oklahoma%20City%20Thunder.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Amway Center",
@@ -195,7 +195,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/magic/",
     "Team": "Orlando Magic",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Orlando%20Magic.gif",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "Wells Fargo Center",
@@ -204,7 +204,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/sixers/",
     "Team": "Philadelphia 76ers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Philadelphia%2076ers.png",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "US Airways Center",
@@ -213,7 +213,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/suns/",
     "Team": "Phoenix Suns",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Phoenix%20Suns.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Moda Center",
@@ -222,7 +222,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/blazers/",
     "Team": "Portland Trail Blazers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Portland%20Trail%20Blazers.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Sleep Train Arena",
@@ -231,7 +231,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/kings/",
     "Team": "Sacramento Kings",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Sacramento%20Kings.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "AT&T Center",
@@ -240,7 +240,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/spurs/",
     "Team": "San Antonio Spurs",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/San%20Antonio%20Spurs.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Scotiabank Arena",
@@ -249,7 +249,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/raptors/",
     "Team": "Toronto Raptors",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Toronto%20Raptors.png",
-    "Conference": ""
+    "Conference": "East"
   },
   {
     "StadiumName": "Energy Solutions Arena",
@@ -258,7 +258,7 @@ var nbastadiumData= [
     "website": "https://www.nba.com/jazz/",
     "Team": "Utah Jazz",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Utah%20Jazz.png",
-    "Conference": ""
+    "Conference": "West"
   },
   {
     "StadiumName": "Capital One Arena",
@@ -267,6 +267,6 @@ var nbastadiumData= [
     "website": "https://www.nba.com/wizards/",
     "Team": "Washington Wizards",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Washington%20Wizards.png",
-    "Conference": ""
+    "Conference": "East"
   }
 ]
