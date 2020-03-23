@@ -7,7 +7,10 @@ var nbastadiumData= [
     "Team": "Atlanta Hawks",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Atlanta%20Hawks.png",
     "Conference": "East",
-    "Divisions": "SOUTHEAST"
+    "Divisions": "SOUTHEAST",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Atlanta.jpg",
+    "Capacity": "21,000"
   },
   {
     "StadiumName": "TD Garden",
@@ -17,7 +20,10 @@ var nbastadiumData= [
     "Team": "Boston Celtics",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Boston%20Celtics.png",
     "Conference": "East",
-    "Divisions": "ATLANTIC"
+    "Divisions": "ATLANTIC",
+    "Year": 1995,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Boston.jpg",
+    "Capacity": "19,580"
   },
   {
     "StadiumName": "Barclays Center",
@@ -27,7 +33,10 @@ var nbastadiumData= [
     "Team": "Brooklyn Nets",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Brooklyn%20Nets.png",
     "Conference": "East",
-    "Divisions": "ATLANTIC"
+    "Divisions": "ATLANTIC",
+    "Year": 2012,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Brooklyn.jpg",
+    "Capacity": "19,000"
   },
   {
     "StadiumName": "Spectrum Center",
@@ -37,7 +46,10 @@ var nbastadiumData= [
     "Team": "Charlotte Hornets",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Charlotte%20Hornets.png",
     "Conference": "East",
-    "Divisions": "SOUTHEAST"
+    "Divisions": "SOUTHEAST",
+    "Year": 2005,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Charlotte.jpg",
+    "Capacity": "20,200"
   },
   {
     "StadiumName": "United Center",
@@ -47,7 +59,10 @@ var nbastadiumData= [
     "Team": "Chicago Bulls",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Chicago%20Bulls.png",
     "Conference": "East",
-    "Divisions": "CENTRAL"
+    "Divisions": "CENTRAL",
+    "Year": 1994,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Chicago.jpg",
+    "Capacity": "23,500"
   },
   {
     "StadiumName": "Quicken Loans Arena",
@@ -57,7 +72,10 @@ var nbastadiumData= [
     "Team": "Cleveland Cavaliers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Cleveland%20Cavaliers.png",
     "Conference": "East",
-    "Divisions": "CENTRAL"
+    "Divisions": "CENTRAL",
+    "Year": 1994,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Cleveland.jpg",
+    "Capacity": "20,562"
   },
   {
     "StadiumName": "American Airlines Center",
@@ -67,7 +85,10 @@ var nbastadiumData= [
     "Team": "Dallas Mavericks",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Dallas%20Mavericks.png",
     "Conference": "West",
-    "Divisions": "SOUTHWEST"
+    "Divisions": "SOUTHWEST",
+    "Year": 2001,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Dallas.jpg",
+    "Capacity": "20,000"
   },
   {
     "StadiumName": "Pepsi Center",
@@ -77,7 +98,10 @@ var nbastadiumData= [
     "Team": "Denver Nuggets",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Denver%20Nuggets.png",
     "Conference": "West",
-    "Divisions": "NORTHWEST"
+    "Divisions": "NORTHWEST",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Denver.jpg",
+    "Capacity": "18,007"
   },
   {
     "StadiumName": "The Palace of Auburn Hills",
@@ -87,7 +111,10 @@ var nbastadiumData= [
     "Team": "Detroit Pistons",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Detroit%20Pistons.png",
     "Conference": "East",
-    "Divisions": "CENTRAL"
+    "Divisions": "CENTRAL",
+    "Year": 1988,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Detroit.jpg",
+    "Capacity": "24,276"
   },
   {
     "StadiumName": "Chase Center",
@@ -97,17 +124,23 @@ var nbastadiumData= [
     "Team": "Golden State Warriors",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Golden%20State%20Warriors.png",
     "Conference": "West",
-    "Divisions": "PACIFIC"
+    "Divisions": "PACIFIC",
+    "Year": 2019,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Golden.jpg",
+    "Capacity": "18,604"
   },
   {
     "StadiumName": "Toyota Center",
-    "longitude": -93.5971038,
-    "latitude": 34.9922688,
+    "longitude": -95.3642945,
+    "latitude": 29.7507604,
     "website": "https://www.nba.com/rockets/",
     "Team": "Houston Rockets",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Houston%20Rockets.png",
     "Conference": "West",
-    "Divisions": "SOUTHWEST"
+    "Divisions": "SOUTHWEST",
+    "Year": 2003,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Houston.jpg",
+    "Capacity": "18,300"
   },
   {
     "StadiumName": "Bankers Life Fieldhouse",
@@ -117,7 +150,10 @@ var nbastadiumData= [
     "Team": "Indiana Pacers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Indiana%20Pacers.png",
     "Conference": "East",
-    "Divisions": "CENTRAL"
+    "Divisions": "CENTRAL",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Indiana.jpg",
+    "Capacity": "20,000"
   },
   {
     "StadiumName": "STAPLES Center",
@@ -127,7 +163,10 @@ var nbastadiumData= [
     "Team": "Los Angeles Clippers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Clippers.png",
     "Conference": "West",
-    "Divisions": "PACIFIC"
+    "Divisions": "PACIFIC",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAC.jpg",
+    "Capacity": "20,000"
   },
   {
     "StadiumName": "STAPLES Center",
@@ -137,7 +176,10 @@ var nbastadiumData= [
     "Team": "Los Angeles Lakers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Lakers.png",
     "Conference": "West",
-    "Divisions": "PACIFIC"
+    "Divisions": "PACIFIC",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAL.jpg",
+    "Capacity": "20,000"
   },
   {
     "StadiumName": "FedExForum",
@@ -147,7 +189,10 @@ var nbastadiumData= [
     "Team": "Memphis Grizzlies",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Memphis%20Grizzlies.png",
     "Conference": "West",
-    "Divisions": "SOUTHWEST"
+    "Divisions": "SOUTHWEST",
+    "Year": 2004,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MEM.jpg",
+    "Capacity": "18,119"
   },
   {
     "StadiumName": "American Airlines Arena",
@@ -157,7 +202,10 @@ var nbastadiumData= [
     "Team": "Miami Heat",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Miami%20Heat.gif",
     "Conference": "East",
-    "Divisions": "SOUTHEAST"
+    "Divisions": "SOUTHEAST",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIA.jpg",
+    "Capacity": "21,000"
   },
   {
     "StadiumName": "Fiserv Forum",
@@ -167,7 +215,10 @@ var nbastadiumData= [
     "Team": "Milwaukee Bucks",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Milwaukee%20Bucks.png",
     "Conference": "East",
-    "Divisions": "CENTRAL"
+    "Divisions": "CENTRAL",
+    "Year": 2018,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIL.jpg",
+    "Capacity": "17,341"
   },
   {
     "StadiumName": "Target Center",
@@ -177,7 +228,10 @@ var nbastadiumData= [
     "Team": "Minnesota Timberwolves",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Minnesota%20Timberwolves.png",
     "Conference": "West",
-    "Divisions": "NORTHWEST"
+    "Divisions": "NORTHWEST",
+    "Year": 1990,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIN.jpg",
+    "Capacity": "19,356"
   },
   {
     "StadiumName": "Smoothie King Center",
@@ -187,7 +241,10 @@ var nbastadiumData= [
     "Team": "New Orleans Pelicans",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/New%20Orleans%20Pelicans.png",
     "Conference": "West",
-    "Divisions": "SOUTHWEST"
+    "Divisions": "SOUTHWEST",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/NO.jpg",
+    "Capacity": "17,791"
   },
   {
     "StadiumName": "Madison Square Garden",
@@ -197,7 +254,10 @@ var nbastadiumData= [
     "Team": "New York Knicks",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/New%20York%20Knicks.gif",
     "Conference": "East",
-    "Divisions": "ATLANTIC"
+    "Divisions": "ATLANTIC",
+    "Year": 1968,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/NYK.jpg",
+    "Capacity": "20,789"
   },
   {
     "StadiumName": "Chesapeake Energy Arena",
@@ -207,7 +267,10 @@ var nbastadiumData= [
     "Team": "Oklahoma City Thunder",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Oklahoma%20City%20Thunder.png",
     "Conference": "West",
-    "Divisions": "NORTHWEST"
+    "Divisions": "NORTHWEST",
+    "Year": 2002,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/OKC.jpg",
+    "Capacity": "18,203"
   },
   {
     "StadiumName": "Amway Center",
@@ -217,7 +280,10 @@ var nbastadiumData= [
     "Team": "Orlando Magic",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Orlando%20Magic.gif",
     "Conference": "East",
-    "Divisions": "SOUTHEAST"
+    "Divisions": "SOUTHEAST",
+    "Year": 2010,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/ORL.jpg",
+    "Capacity": "20,000"
   },
   {
     "StadiumName": "Wells Fargo Center",
@@ -227,7 +293,10 @@ var nbastadiumData= [
     "Team": "Philadelphia 76ers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Philadelphia%2076ers.png",
     "Conference": "East",
-    "Divisions": "ATLANTIC"
+    "Divisions": "ATLANTIC",
+    "Year": 1996,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/PHI.jpg",
+    "Capacity": "19,500"
   },
   {
     "StadiumName": "US Airways Center",
@@ -237,7 +306,10 @@ var nbastadiumData= [
     "Team": "Phoenix Suns",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Phoenix%20Suns.png",
     "Conference": "West",
-    "Divisions": "PACIFIC"
+    "Divisions": "PACIFIC",
+    "Year": 1992,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/PHX.jpg",
+    "Capacity": "18,422"
   },
   {
     "StadiumName": "Moda Center",
@@ -247,7 +319,10 @@ var nbastadiumData= [
     "Team": "Portland Trail Blazers",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Portland%20Trail%20Blazers.png",
     "Conference": "West",
-    "Divisions": "NORTHWEST"
+    "Divisions": "NORTHWEST",
+    "Year": 1995,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/POR.jpg",
+    "Capacity": "19,980"
   },
   {
     "StadiumName": "Sleep Train Arena",
@@ -257,7 +332,10 @@ var nbastadiumData= [
     "Team": "Sacramento Kings",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Sacramento%20Kings.png",
     "Conference": "West",
-    "Divisions": "PACIFIC"
+    "Divisions": "PACIFIC",
+    "Year": 1988,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAC.jpg",
+    "Capacity": "17,317"
   },
   {
     "StadiumName": "AT&T Center",
@@ -267,7 +345,10 @@ var nbastadiumData= [
     "Team": "San Antonio Spurs",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/San%20Antonio%20Spurs.png",
     "Conference": "West",
-    "Divisions": "SOUTHWEST"
+    "Divisions": "SOUTHWEST",
+    "Year": 2002,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAS.jpg",
+    "Capacity": "18,581"
   },
   {
     "StadiumName": "Scotiabank Arena",
@@ -277,7 +358,10 @@ var nbastadiumData= [
     "Team": "Toronto Raptors",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Toronto%20Raptors.png",
     "Conference": "East",
-    "Divisions": "ATLANTIC"
+    "Divisions": "ATLANTIC",
+    "Year": 1999,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/TOR.jpeg",
+    "Capacity": "19,800"
   },
   {
     "StadiumName": "Energy Solutions Arena",
@@ -287,7 +371,10 @@ var nbastadiumData= [
     "Team": "Utah Jazz",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Utah%20Jazz.png",
     "Conference": "West",
-    "Divisions": "NORTHWEST"
+    "Divisions": "NORTHWEST",
+    "Year": 1991,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Utah.jpg",
+    "Capacity": "18,300"
   },
   {
     "StadiumName": "Capital One Arena",
@@ -297,6 +384,9 @@ var nbastadiumData= [
     "Team": "Washington Wizards",
     "Logo": "http://oit2.sps.nyu.edu/~tj986/Markericon/Washington%20Wizards.png",
     "Conference": "East",
-    "Divisions": "SOUTHEAST"
+    "Divisions": "SOUTHEAST",
+    "Year": 1997,
+    "Picture": "http://oit2.sps.nyu.edu/~tj986/Markericon/Image/WAS.jpg",
+    "Capacity": "20,356"
   }
 ]

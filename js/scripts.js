@@ -22,9 +22,10 @@ nbastadiumData.forEach(function(nbastadiumEntry) {
        .setHTML(`<div id='logo' style="background-image:url('${nbastadiumEntry.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
                 <b>${nbastadiumEntry.StadiumName}</b> <br>
-                <b>Built Year:</b><br>
+                <b>Built Year:</b>${nbastadiumEntry.Year}<br>
                 <b>NBA Team:</b>${nbastadiumEntry.Team}<br>
                 <b>Website</b> <br><a href="http://www.${nbastadiumEntry.website}">${nbastadiumEntry.website}</a><br>
-                <b>Divisions:</b> ${nbastadiumEntry.Divisions}`))
+                <b>Divisions:</b> ${nbastadiumEntry.Divisions}<br>
+                <div id='image-zoom' style="background-image:url('${nbastadiumEntry.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>`))
       .addTo(map);
   })

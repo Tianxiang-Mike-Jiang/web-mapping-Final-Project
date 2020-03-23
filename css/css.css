@@ -36,9 +36,13 @@ h3 {
   min-height: 150px;
 }
 
-#logo{  
+#logo{
   padding: 15px;
   min-height: 150px;}
+
+#image-zoom{
+    padding: 15px;
+    min-height: 150px;}
 
 #sidebar {
   position: absolute;
