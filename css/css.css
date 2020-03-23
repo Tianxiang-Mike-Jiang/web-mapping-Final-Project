@@ -66,49 +66,20 @@ font-size: 20px}
   background-color: #4682b4
 }
 
-.filter-group {
-font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-font-weight: 600;
-position: absolute;
-Bottom: 40px;
-right: 20px;
-z-index: 1;
-border-radius: 3px;
-width: 120px;
-color: #fff;
+.marker {
+  background-image: url('marker icon.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.filter-group input[type='checkbox']:first-child + label {
-border-radius: 3px 3px 0 0;
+.mapboxgl-popup {
+  max-width: 200px;
 }
 
-.filter-group label:last-child {
-border-radius: 0 0 3px 3px;
-border: none;
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
-
-.filter-group input[type='checkbox'] {
-display: none;
-}
-
-.filter-group input[type='checkbox'] + label {
-background-color: #4682b4;
-display: block;
-cursor: pointer;
-padding: 10px;
-border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.filter-group input[type='checkbox'] + label {
-background-color: #4682b4;
-text-transform: capitalize;
-}
-
-.filter-group input[type='checkbox'] + label:hover,
-.filter-group input[type='checkbox']:checked + label {
-background-color: #4682b4;
-}
-
-.filter-group input[type='checkbox']:checked + label:before {
-content: '✔';
-margin-right: 5px;
