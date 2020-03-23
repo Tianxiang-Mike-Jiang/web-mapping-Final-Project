@@ -24,8 +24,10 @@ h4{
   text-align: center;
   font-family: Georgia
 }
+h5{font-family: Georgia;
+font-size: 20px}
 .flyto-button {
-  background: #D3D3D3;
+  background: #2F4F4F;
   color: #FFF;
   padding: 11px;
   border: none;
@@ -33,10 +35,10 @@ h4{
   font-size: 1rem;
   width: 100%;
   margin-bottom:15px;
-  color: #2F4F4F;
+  color: #FFF;
 }
 #information {
-  background: #9CA0A1;
+  background: #696969;
   padding: 15px;
   min-height: 150px;
 }
@@ -55,7 +57,7 @@ h4{
   top: 0;
   bottom: 0;
   width: 350px;
-  background-color: #797986;
+  background-color: #2F4F4F;
   color: #FFF;
   padding: 25px;
   box-sizing: border-box;
