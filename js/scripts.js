@@ -20,7 +20,7 @@ var map = new mapboxgl.Map(initOptions);
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-var nbamap = {
+var nbaeastern = {
    "type": "FeatureCollection",
    "features": [
   {
@@ -307,304 +307,309 @@ var nbamap = {
     "Capacity":" 20,356 ",
     "Color":"#17408B"
     }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -96.8173592,32.7848939 ]
-    },
-    "properties": {
-    "StadiumName":"American Airlines Center",
-    "website":" mavs.com/",
-    "Team":"Dallas Mavericks",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Dallas%20Mavericks.png",
-    "conference":"Western",
-    "Divisions":"SOUTHWEST",
-    "Year":2001,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Dallas.jpg",
-    "Capacity":" 20,000 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -105.009904,39.7486641 ]
-    },
-    "properties": {
-    "StadiumName":"Pepsi Center",
-    "website":"nba.com/nuggets/",
-    "Team":"Denver Nuggets",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Denver%20Nuggets.png",
-    "conference":"Western",
-    "Divisions":"NORTHWEST",
-    "Year":1999,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Denver.jpg",
-    "Capacity":" 18,007 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -122.3895203,37.7679315 ]
-    },
-    "properties": {
-    "StadiumName":"Chase Center",
-    "website":"nba.com/warriors/",
-    "Team":"Golden State Warriors",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Golden%20State%20Warriors.png",
-    "conference":"Western",
-    "Divisions":"PACIFIC",
-    "Year":2019,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Golden.jpg",
-    "Capacity":" 18,604 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -93.5971038,34.9922688 ]
-    },
-    "properties": {
-    "StadiumName":"Toyota Center",
-    "website":"nba.com/rockets/",
-    "Team":"Houston Rockets",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Houston%20Rockets.png",
-    "conference":"Western",
-    "Divisions":"SOUTHWEST",
-    "Year":2003,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Houston.jpg",
-    "Capacity":" 18,300 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -118.3694481,34.2430219 ]
-    },
-    "properties": {
-    "StadiumName":"STAPLES Center",
-    "website":"nba.com/clippers/",
-    "Team":"Los Angeles Clippers",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Clippers.png",
-    "conference":"Western",
-    "Divisions":"PACIFIC",
-    "Year":1999,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAC.jpg",
-    "Capacity":" 20,000 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [-118.2694481,34.0430219 ]
-    },
-    "properties": {
-    "StadiumName":"STAPLES Center",
-    "website":"nba.com/lakers/",
-    "Team":"Los Angeles Lakers",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Lakers.png",
-    "conference":"Western",
-    "Divisions":"PACIFIC",
-    "Year":1999,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAL.jpg",
-    "Capacity":" 20,000 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -90.0527804,35.1381462 ]
-    },
-    "properties": {
-    "StadiumName":"FedExForum",
-    "website":"nba.com/grizzlies/",
-    "Team":"Memphis Grizzlies",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Memphis%20Grizzlies.png",
-    "conference":"Western",
-    "Divisions":"SOUTHWEST",
-    "Year":2004,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MEM.jpg",
-    "Capacity":" 18,119 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -93.278183,44.9795319 ]
-    },
-    "properties": {
-    "StadiumName":"Target Center",
-    "website":"nba.com/timberwolves/",
-    "Team":"Minnesota Timberwolves",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Minnesota%20Timberwolves.png",
-    "conference":"Western",
-    "Divisions":"NORTHWEST",
-    "Year":1990,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIN.jpg",
-    "Capacity":" 19,356 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -90.0842508,29.9490397 ]
-    },
-    "properties": {
-    "StadiumName":"Smoothie King Center",
-    "website":"nba.com/pelicans/",
-    "Team":"New Orleans Pelicans",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/New%20Orleans%20Pelicans.png",
-    "conference":"Western",
-    "Divisions":"SOUTHWEST",
-    "Year":1999,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/NO.jpg",
-    "Capacity":" 17,791 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -97.5173078,35.463429 ]
-    },
-    "properties": {
-    "StadiumName":"Chesapeake Energy Arena",
-    "website":"nba.com/thunder/",
-    "Team":"Oklahoma City Thunder",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Oklahoma%20City%20Thunder.png",
-    "conference":"Western",
-    "Divisions":"NORTHWEST",
-    "Year":2002,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/OKC.jpg",
-    "Capacity":" 18,203 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -112.0740501,33.4458798 ]
-    },
-    "properties": {
-    "StadiumName":"US Airways Center",
-    "website":"nba.com/suns/",
-    "Team":"Phoenix Suns",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Phoenix%20Suns.png",
-    "conference":"Western",
-    "Divisions":"PACIFIC",
-    "Year":1992,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/PHX.jpg",
-    "Capacity":" 18,422 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -122.6690363,45.5315688 ]
-    },
-    "properties": {
-    "StadiumName":"Moda Center",
-    "website":"nba.com/blazers/",
-    "Team":"Portland Trail Blazers",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Portland%20Trail%20Blazers.png",
-    "conference":"Western",
-    "Divisions":"NORTHWEST",
-    "Year":1995,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/POR.jpg",
-    "Capacity":" 19,980 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -121.5203224,38.649043 ]
-    },
-    "properties": {
-    "StadiumName":"Sleep Train Arena",
-    "website":"nba.com/kings/",
-    "Team":"Sacramento Kings",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Sacramento%20Kings.png",
-    "conference":"Western",
-    "Divisions":"PACIFIC",
-    "Year":1988,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAC.jpg",
-    "Capacity":" 17,317 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -98.4396753,29.4271568 ]
-    },
-    "properties": {
-    "StadiumName":"AT&T Center",
-    "website":"nba.com/spurs/",
-    "Team":"San Antonio Spurs",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/San%20Antonio%20Spurs.png",
-    "conference":"Western",
-    "Divisions":"SOUTHWEST",
-    "Year":2002,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAS.jpg",
-    "Capacity":" 18,581 ",
-    "Color":"#C9082A"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -111.9032761,40.7682681 ]
-    },
-    "properties": {
-    "StadiumName":"Energy Solutions Arena",
-    "website":"nba.com/jazz/",
-    "Team":"Utah Jazz",
-    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Utah%20Jazz.png",
-    "conference":"Western",
-    "Divisions":"NORTHWEST",
-    "Year":1991,
-    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Utah.jpg",
-    "Capacity":" 18,300 ",
-    "Color":"#C9082A"
-    }
   }
 ]
 }
 
+var nbawestern = {"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -96.8173592,32.7848939 ]
+  },
+  "properties": {
+  "StadiumName":"American Airlines Center",
+  "website":" mavs.com/",
+  "Team":"Dallas Mavericks",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Dallas%20Mavericks.png",
+  "conference":"Western",
+  "Divisions":"SOUTHWEST",
+  "Year":2001,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Dallas.jpg",
+  "Capacity":" 20,000 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -105.009904,39.7486641 ]
+  },
+  "properties": {
+  "StadiumName":"Pepsi Center",
+  "website":"nba.com/nuggets/",
+  "Team":"Denver Nuggets",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Denver%20Nuggets.png",
+  "conference":"Western",
+  "Divisions":"NORTHWEST",
+  "Year":1999,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Denver.jpg",
+  "Capacity":" 18,007 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -122.3895203,37.7679315 ]
+  },
+  "properties": {
+  "StadiumName":"Chase Center",
+  "website":"nba.com/warriors/",
+  "Team":"Golden State Warriors",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Golden%20State%20Warriors.png",
+  "conference":"Western",
+  "Divisions":"PACIFIC",
+  "Year":2019,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Golden.jpg",
+  "Capacity":" 18,604 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -93.5971038,34.9922688 ]
+  },
+  "properties": {
+  "StadiumName":"Toyota Center",
+  "website":"nba.com/rockets/",
+  "Team":"Houston Rockets",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Houston%20Rockets.png",
+  "conference":"Western",
+  "Divisions":"SOUTHWEST",
+  "Year":2003,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Houston.jpg",
+  "Capacity":" 18,300 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -118.3694481,34.2430219 ]
+  },
+  "properties": {
+  "StadiumName":"STAPLES Center",
+  "website":"nba.com/clippers/",
+  "Team":"Los Angeles Clippers",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Clippers.png",
+  "conference":"Western",
+  "Divisions":"PACIFIC",
+  "Year":1999,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAC.jpg",
+  "Capacity":" 20,000 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [-118.2694481,34.0430219 ]
+  },
+  "properties": {
+  "StadiumName":"STAPLES Center",
+  "website":"nba.com/lakers/",
+  "Team":"Los Angeles Lakers",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Lakers.png",
+  "conference":"Western",
+  "Divisions":"PACIFIC",
+  "Year":1999,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAL.jpg",
+  "Capacity":" 20,000 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -90.0527804,35.1381462 ]
+  },
+  "properties": {
+  "StadiumName":"FedExForum",
+  "website":"nba.com/grizzlies/",
+  "Team":"Memphis Grizzlies",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Memphis%20Grizzlies.png",
+  "conference":"Western",
+  "Divisions":"SOUTHWEST",
+  "Year":2004,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MEM.jpg",
+  "Capacity":" 18,119 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -93.278183,44.9795319 ]
+  },
+  "properties": {
+  "StadiumName":"Target Center",
+  "website":"nba.com/timberwolves/",
+  "Team":"Minnesota Timberwolves",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Minnesota%20Timberwolves.png",
+  "conference":"Western",
+  "Divisions":"NORTHWEST",
+  "Year":1990,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIN.jpg",
+  "Capacity":" 19,356 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -90.0842508,29.9490397 ]
+  },
+  "properties": {
+  "StadiumName":"Smoothie King Center",
+  "website":"nba.com/pelicans/",
+  "Team":"New Orleans Pelicans",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/New%20Orleans%20Pelicans.png",
+  "conference":"Western",
+  "Divisions":"SOUTHWEST",
+  "Year":1999,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/NO.jpg",
+  "Capacity":" 17,791 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -97.5173078,35.463429 ]
+  },
+  "properties": {
+  "StadiumName":"Chesapeake Energy Arena",
+  "website":"nba.com/thunder/",
+  "Team":"Oklahoma City Thunder",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Oklahoma%20City%20Thunder.png",
+  "conference":"Western",
+  "Divisions":"NORTHWEST",
+  "Year":2002,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/OKC.jpg",
+  "Capacity":" 18,203 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -112.0740501,33.4458798 ]
+  },
+  "properties": {
+  "StadiumName":"US Airways Center",
+  "website":"nba.com/suns/",
+  "Team":"Phoenix Suns",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Phoenix%20Suns.png",
+  "conference":"Western",
+  "Divisions":"PACIFIC",
+  "Year":1992,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/PHX.jpg",
+  "Capacity":" 18,422 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -122.6690363,45.5315688 ]
+  },
+  "properties": {
+  "StadiumName":"Moda Center",
+  "website":"nba.com/blazers/",
+  "Team":"Portland Trail Blazers",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Portland%20Trail%20Blazers.png",
+  "conference":"Western",
+  "Divisions":"NORTHWEST",
+  "Year":1995,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/POR.jpg",
+  "Capacity":" 19,980 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -121.5203224,38.649043 ]
+  },
+  "properties": {
+  "StadiumName":"Sleep Train Arena",
+  "website":"nba.com/kings/",
+  "Team":"Sacramento Kings",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Sacramento%20Kings.png",
+  "conference":"Western",
+  "Divisions":"PACIFIC",
+  "Year":1988,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAC.jpg",
+  "Capacity":" 17,317 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -98.4396753,29.4271568 ]
+  },
+  "properties": {
+  "StadiumName":"AT&T Center",
+  "website":"nba.com/spurs/",
+  "Team":"San Antonio Spurs",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/San%20Antonio%20Spurs.png",
+  "conference":"Western",
+  "Divisions":"SOUTHWEST",
+  "Year":2002,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAS.jpg",
+  "Capacity":" 18,581 ",
+  "Color":"#C9082A"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+     "type": "Point",
+     "coordinates":  [ -111.9032761,40.7682681 ]
+  },
+  "properties": {
+  "StadiumName":"Energy Solutions Arena",
+  "website":"nba.com/jazz/",
+  "Team":"Utah Jazz",
+  "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Utah%20Jazz.png",
+  "conference":"Western",
+  "Divisions":"NORTHWEST",
+  "Year":1991,
+  "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Utah.jpg",
+  "Capacity":" 18,300 ",
+  "Color":"#C9082A"
+  }
+}
+]
+}
+
 // add markers to map
-nbamap.features.forEach(function(marker) {
+nbaeastern.features.forEach(function(marker) {
 
   // create a HTML element for each feature
   var el = document.createElement('div');
-  el.className = 'marker';
+  el.className = 'marker poi-eastern';
 
   // make a marker for each feature and add to the map
-new mapboxgl.Marker(el)
+new mapboxgl.Marker (el)
   .setLngLat(marker.geometry.coordinates)
   .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
     .setHTML(`<div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
@@ -614,66 +619,64 @@ new mapboxgl.Marker(el)
                 <b>NBA Team:</b> ${marker.properties.Team}<br>
                 <b>Team Website</b> <br><a href="http://www.${marker.properties.website}">${marker.properties.website}</a><br>
                 <b>Divisions:</b> ${marker.properties.Divisions}<br>
-                <b>Conference:</b> ${marker.properties.Conference}<br>
+                <b>Conference:</b> ${marker.properties.conference}<br>
                 <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>
 
                 `))
   .addTo(map);
 })
 
-var filterGroup = document.getElementById('filter-group');
+nbawestern.features.forEach(function(marker) {
 
-map.on('load', function() {
-// Add a GeoJSON source containing place coordinates and information.
-map.addSource('nbamap', {
-'type': 'geojson',
-'data': nbamap
-});
+  // create a HTML element for each feature
+  var el = document.createElement('div');
+  el.className = 'marker poi-western';
 
-nbamap.features.forEach(function(feature) {
-var symbol = feature.properties['conference'];
-var layerID = 'poi-' + symbol;
+  // make a marker for each feature and add to the map
+new mapboxgl.Marker (el)
+  .setLngLat(marker.geometry.coordinates)
+  .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+    .setHTML(`<div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
-// Add a layer for this symbol type if it hasn't been added already.
-if (!map.getLayer(layerID)) {
-map.addLayer({
-'id': layerID,
-'type': 'symbol',
-'source': 'nbamap',
-'layout': {
-'icon-image': symbol + '-15',
-'icon-allow-overlap': true
-},
-'filter': ['==', 'conference', symbol]
-});
+                <b>${marker.properties.StadiumName}</b> <br>
+                <b>Built Year:</b> ${marker.properties.Year}<br>
+                <b>NBA Team:</b> ${marker.properties.Team}<br>
+                <b>Team Website</b> <br><a href="http://www.${marker.properties.website}">${marker.properties.website}</a><br>
+                <b>Divisions:</b> ${marker.properties.Divisions}<br>
+                <b>Conference:</b> ${marker.properties.conference}<br>
+                <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>
 
-// Add checkbox and label elements for the layer.
-var input = document.createElement('input');
-input.type = 'checkbox';
-input.id = layerID;
-input.checked = true;
-filterGroup.appendChild(input);
+                `))
+  .addTo(map);
+})
 
-var label = document.createElement('label');
-label.setAttribute('for', layerID);
-label.textContent = symbol;
-filterGroup.appendChild(label);
+$('#westernCheckbox').on('click',function hide() {
+    let markers = document.getElementsByClassName("marker poi-western");
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].style.visibility = "hidden";
+    }
+})
 
-// When the checkbox changes, update the visibility of the layer.
-input.addEventListener('change', function(e) {
-map.setLayoutProperty(
-layerID,
-'visibility',
-e.target.checked ? 'visible' : 'none'
-);
-});
+$('#westernCheckbox').on('click',function show() {
+    let markers = document.getElementsByClassName("marker poi-western");
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].style.visibility = "hidden";
+    }
+})
+
+$('#easternCheckbox').on('click',function hide() {
+    let markers = document.getElementsByClassName("marker poi-eastern");
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].style.visibility = "hidden";
+    }
+})
+
+function show() {
+    let markers = document.getElementsByClassName("marker poi-eastern");
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].style.visibility = "visible";
+    }
 }
-});
-});
-
-
-
-
 // Fly to Buttons to each divisions
   $('#ATL').on('click', function() {
     map.flyTo({
