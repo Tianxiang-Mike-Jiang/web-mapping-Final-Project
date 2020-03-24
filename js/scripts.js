@@ -9,7 +9,7 @@ var initialZoom =3.4
 // Create an object to hold the initialization options for a map
 var initOptions = {
   container: 'map-container',
-  style: 'mapbox://styles/mapbox/light-v10',
+  style: 'mapbox://styles/mapbox/dark-v10',
   center: initialCenterPoint,
   zoom: initialZoom,
 }
