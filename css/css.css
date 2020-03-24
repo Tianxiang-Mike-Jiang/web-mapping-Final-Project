@@ -61,6 +61,7 @@ font-size: 20px}
   color: #FFF;
   padding: 25px;
   box-sizing: border-box;
+  opacity: 1
 }
 #fill-color{
   background-color: #4682b4

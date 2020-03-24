@@ -21,609 +21,549 @@ var map = new mapboxgl.Map(initOptions);
 map.addControl(new mapboxgl.NavigationControl());
 
 var geojson = {
- "type": "FeatureCollection",
- "features": [
-   {
-     "type": "Feature",
-     "geometry": {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -75.172,
-         39.9012
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Atlantic",
-       "team": "76ers",
-       "city": "Philadelphia",
-       "arena": "Wells Fargo Center",
-       "marker-color": "#b4cadb",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -84.3985184,33.7572935 ]
+    },
+    "properties": {
+    "StadiumName":"State Farm Arena",
+    "website":"https://www.nba.com/hawks/",
+    "Team":"Atlanta Hawks",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Atlanta%20Hawks.png",
+    "Conference":"East",
+    "Divisions":"SOUTHEAST",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Atlanta.jpg",
+    "Capacity":" 21,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -71.0621,
-         42.3662
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Atlantic",
-       "team": "Celtics",
-       "city": "Boston",
-       "arena": "TD Garden",
-       "marker-color": "#b4cadb",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -71.06434,42.3662019 ]
+    },
+    "properties": {
+    "StadiumName":"TD Garden",
+    "website":"https://www.nba.com/celtics/",
+    "Team":"Boston Celtics",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Boston%20Celtics.png",
+    "Conference":"East",
+    "Divisions":"ATLANTIC",
+    "Year":1995,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Boston.jpg",
+    "Capacity":" 19,580 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -73.9934,
-         40.7505
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Atlantic",
-       "team": "Knicks",
-       "city": "New York",
-       "arena": "Madison Square Garden",
-       "marker-color": "#b4cadb",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -73.9776096,40.6826505 ]
+    },
+    "properties": {
+    "StadiumName":"Barclays Center",
+    "website":"https://www.nba.com/nets/",
+    "Team":"Brooklyn Nets",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Brooklyn%20Nets.png",
+    "Conference":"East",
+    "Divisions":"ATLANTIC",
+    "Year":2012,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Brooklyn.jpg",
+    "Capacity":" 19,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -73.9758,
-         40.6828
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Atlantic",
-       "team": "Nets",
-       "city": "Brooklyn",
-       "arena": "Barclays Center",
-       "marker-color": "#b4cadb",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -80.8414977,35.2251853 ]
+    },
+    "properties": {
+    "StadiumName":"Spectrum Center",
+    "website":"https://www.nba.com/hornets/",
+    "Team":"Charlotte Hornets",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Charlotte%20Hornets.png",
+    "Conference":"East",
+    "Divisions":"SOUTHEAST",
+    "Year":2005,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Charlotte.jpg",
+    "Capacity":" 20,200 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -79.3791,
-         43.6435
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Atlantic",
-       "team": "Raptors",
-       "city": "Toronto",
-       "arena": "Air Canada Center",
-       "marker-color": "#b4cadb",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -87.6763699,41.8806948 ]
+    },
+    "properties": {
+    "StadiumName":"United Center",
+    "website":"https://www.nba.com/bulls/",
+    "Team":"Chicago Bulls",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Chicago%20Bulls.png",
+    "Conference":"East",
+    "Divisions":"CENTRAL",
+    "Year":1994,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Chicago.jpg",
+    "Capacity":" 23,500 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -87.9172,
-         43.0436
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Central",
-       "team": "Bucks",
-       "city": "Milwaukee",
-       "arena": "Bradley Center",
-       "marker-color": "#257aba",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -81.6904069,41.4964837 ]
+    },
+    "properties": {
+    "StadiumName":"Quicken Loans Arena",
+    "website":"https://www.nba.com/cavaliers/",
+    "Team":"Cleveland Cavaliers",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Cleveland%20Cavaliers.png",
+    "Conference":"East",
+    "Divisions":"CENTRAL",
+    "Year":1994,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Cleveland.jpg",
+    "Capacity":" 20,562 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -87.6742,
-         41.8807
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Central",
-       "team": "Bulls",
-       "city": "Chicago",
-       "arena": "United Center",
-       "marker-color": "#257aba",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -96.8173592,32.7848939 ]
+    },
+    "properties": {
+    "StadiumName":"American Airlines Center",
+    "website":"https://www.mavs.com/",
+    "Team":"Dallas Mavericks",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Dallas%20Mavericks.png",
+    "Conference":"West",
+    "Divisions":"SOUTHWEST",
+    "Year":2001,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Dallas.jpg",
+    "Capacity":" 20,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -81.6882,
-         41.4965
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Central",
-       "team": "Cavaliers",
-       "city": "Cleveland",
-       "arena": "Quicken Loans Arena",
-       "marker-color": "#257aba",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -105.009904,39.7486641 ]
+    },
+    "properties": {
+    "StadiumName":"Pepsi Center",
+    "website":"https://www.nba.com/nuggets/",
+    "Team":"Denver Nuggets",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Denver%20Nuggets.png",
+    "Conference":"West",
+    "Divisions":"NORTHWEST",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Denver.jpg",
+    "Capacity":" 18,007 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -83.0552,
-         42.341
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Central",
-       "team": "Pistons",
-       "city": "Detroit",
-       "arena": "Little Caesars Arena",
-       "marker-color": "#257aba",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -83.2447494,42.698533 ]
+    },
+    "properties": {
+    "StadiumName":"The Palace of Auburn Hills",
+    "website":"https://www.nba.com/pistons/",
+    "Team":"Detroit Pistons",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Detroit%20Pistons.png",
+    "Conference":"East",
+    "Divisions":"CENTRAL",
+    "Year":1988,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Detroit.jpg",
+    "Capacity":" 24,276 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -86.1555,
-         39.7639
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Central",
-       "team": "Pacers",
-       "city": "Indianapolis",
-       "arena": "Bankers Life Fieldhouse",
-       "marker-color": "#257aba",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -122.3895203,37.7679315 ]
+    },
+    "properties": {
+    "StadiumName":"Chase Center",
+    "website":"https://www.nba.com/warriors/",
+    "Team":"Golden State Warriors",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Golden%20State%20Warriors.png",
+    "Conference":"West",
+    "Divisions":"PACIFIC",
+    "Year":2019,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Golden.jpg",
+    "Capacity":" 18,604 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -111.9011,
-         40.7683
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Northwest",
-       "team": "Jazz",
-       "city": "Utah",
-       "arena": "Vivint Smart Home Arena",
-       "marker-color": "#960000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -93.5971038,34.9922688 ]
+    },
+    "properties": {
+    "StadiumName":"Toyota Center",
+    "website":"https://www.nba.com/rockets/",
+    "Team":"Houston Rockets",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Houston%20Rockets.png",
+    "Conference":"West",
+    "Divisions":"SOUTHWEST",
+    "Year":2003,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Houston.jpg",
+    "Capacity":" 18,300 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -97.5151,
-         35.4634
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Northwest",
-       "team": "Thunder",
-       "city": "Oklahoma City",
-       "arena": "Chesapeake Arena",
-       "marker-color": "#960000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -86.1577307,39.7640475 ]
+    },
+    "properties": {
+    "StadiumName":"Bankers Life Fieldhouse",
+    "website":"https://www.nba.com/pacers/",
+    "Team":"Indiana Pacers",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Indiana%20Pacers.png",
+    "Conference":"East",
+    "Divisions":"CENTRAL",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Indiana.jpg",
+    "Capacity":" 20,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -93.2762,
-         44.9795
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Northwest",
-       "team": "Timberwolves",
-       "city": "Minnesota",
-       "arena": "Target Center",
-       "marker-color": "#960000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -118.2694481,34.0430219 ]
+    },
+    "properties": {
+    "StadiumName":"STAPLES Center",
+    "website":"https://www.nba.com/clippers/",
+    "Team":"Los Angeles Clippers",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Clippers.png",
+    "Conference":"West",
+    "Divisions":"PACIFIC",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAC.jpg",
+    "Capacity":" 20,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -122.6668,
-         45.5316
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Northwest",
-       "team": "Trail Blazers",
-       "city": "Portland",
-       "arena": "Moda Center",
-       "marker-color": "#960000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -118.2694481,34.0430219 ]
+    },
+    "properties": {
+    "StadiumName":"STAPLES Center",
+    "website":"https://www.nba.com/lakers/",
+    "Team":"Los Angeles Lakers",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Los%20Angeles%20Lakers.png",
+    "Conference":"West",
+    "Divisions":"PACIFIC",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/LAL.jpg",
+    "Capacity":" 20,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -105.0077,
-         39.7487
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Northwest",
-       "team": "Nuggets",
-       "city": "Denver",
-       "arena": "Pepsi Center",
-       "marker-color": "#960000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -90.0527804,35.1381462 ]
+    },
+    "properties": {
+    "StadiumName":"FedExForum",
+    "website":"https://www.nba.com/grizzlies/",
+    "Team":"Memphis Grizzlies",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Memphis%20Grizzlies.png",
+    "Conference":"West",
+    "Divisions":"SOUTHWEST",
+    "Year":2004,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MEM.jpg",
+    "Capacity":" 18,119 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -118.2673,
-         34.043
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Pacific",
-       "team": "Clippers",
-       "city": "Los Angeles",
-       "arena": "Staples Center",
-       "marker-color": "#c70000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -80.189163,25.7814062 ]
+    },
+    "properties": {
+    "StadiumName":"American Airlines Arena",
+    "website":"https://www.nba.com/heat/",
+    "Team":"Miami Heat",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Miami%20Heat.gif",
+    "Conference":"East",
+    "Divisions":"SOUTHEAST",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIA.jpg",
+    "Capacity":" 21,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -121.4996,
-         38.5806
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Pacific",
-       "team": "Kings",
-       "city": "Sacramento",
-       "arena": "Golden 1 Center",
-       "marker-color": "#c70000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -87.9195802,43.0450841 ]
+    },
+    "properties": {
+    "StadiumName":"Fiserv Forum",
+    "website":"https://www.nba.com/bucks/",
+    "Team":"Milwaukee Bucks",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Milwaukee%20Bucks.png",
+    "Conference":"East",
+    "Divisions":"CENTRAL",
+    "Year":2018,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIL.jpg",
+    "Capacity":" 17,341 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -118.2673,
-         34.043
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Pacific",
-       "team": "Lakers",
-       "city": "Los Angeles",
-       "arena": "Staples Center",
-       "marker-color": "#c70000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -93.278183,44.9795319 ]
+    },
+    "properties": {
+    "StadiumName":"Target Center",
+    "website":"https://www.nba.com/timberwolves/",
+    "Team":"Minnesota Timberwolves",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Minnesota%20Timberwolves.png",
+    "Conference":"West",
+    "Divisions":"NORTHWEST",
+    "Year":1990,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/MIN.jpg",
+    "Capacity":" 19,356 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -112.0712,
-         33.4457
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Pacific",
-       "team": "Suns",
-       "city": "Phoenix",
-       "arena": "Talking Stick Resort Arena",
-       "marker-color": "#c70000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -90.0842508,29.9490397 ]
+    },
+    "properties": {
+    "StadiumName":"Smoothie King Center",
+    "website":"https://www.nba.com/pelicans/",
+    "Team":"New Orleans Pelicans",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/New%20Orleans%20Pelicans.png",
+    "Conference":"West",
+    "Divisions":"SOUTHWEST",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/NO.jpg",
+    "Capacity":" 17,791 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -122.3895203,
-         37.7679315
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Pacific",
-       "team": "Warriors",
-       "city": "Golden State",
-       "arena": "Oracle Arena",
-       "marker-color": "#c70000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -73.9956327,40.7505085 ]
+    },
+    "properties": {
+    "StadiumName":"Madison Square Garden",
+    "website":"https://www.nba.com/knicks/",
+    "Team":"New York Knicks",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/New%20York%20Knicks.gif",
+    "Conference":"East",
+    "Divisions":"ATLANTIC",
+    "Year":1968,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/NYK.jpg",
+    "Capacity":" 20,789 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -77.0209,
-         38.8981
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Southeast",
-       "team": "Capital One Arena",
-       "city": "Washington",
-       "arena": "AmericanAirlines Arena",
-       "marker-color": "#034e9e",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -97.5173078,35.463429 ]
+    },
+    "properties": {
+    "StadiumName":"Chesapeake Energy Arena",
+    "website":"https://www.nba.com/thunder/",
+    "Team":"Oklahoma City Thunder",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Oklahoma%20City%20Thunder.png",
+    "Conference":"West",
+    "Divisions":"NORTHWEST",
+    "Year":2002,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/OKC.jpg",
+    "Capacity":" 18,203 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -84.3963,
-         33.7573
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Southeast",
-       "team": "Hawks",
-       "city": "Atlanta",
-       "arena": "Phillips Arena",
-       "marker-color": "#034e9e",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -81.3860475,28.5392261 ]
+    },
+    "properties": {
+    "StadiumName":"Amway Center",
+    "website":"https://www.nba.com/magic/",
+    "Team":"Orlando Magic",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Orlando%20Magic.gif",
+    "Conference":"East",
+    "Divisions":"SOUTHEAST",
+    "Year":2010,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/ORL.jpg",
+    "Capacity":" 20,000 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -80.187,
-         25.7814
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Southeast",
-       "team": "Heat",
-       "city": "Miami",
-       "arena": "AmericanAirlines Arena",
-       "marker-color": "#034e9e",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -75.1741735,39.9012056 ]
+    },
+    "properties": {
+    "StadiumName":"Wells Fargo Center",
+    "website":"https://www.nba.com/sixers/",
+    "Team":"Philadelphia 76ers",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Philadelphia%2076ers.png",
+    "Conference":"East",
+    "Divisions":"ATLANTIC",
+    "Year":1996,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/PHI.jpg",
+    "Capacity":" 19,500 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -80.8392,
-         35.2251
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Southeast",
-       "team": "Hornets",
-       "city": "Charlotte",
-       "arena": "Spectrum Center",
-       "marker-color": "#034e9e",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -112.0740501,33.4458798 ]
+    },
+    "properties": {
+    "StadiumName":"US Airways Center",
+    "website":"https://www.nba.com/suns/",
+    "Team":"Phoenix Suns",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Phoenix%20Suns.png",
+    "Conference":"West",
+    "Divisions":"PACIFIC",
+    "Year":1992,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/PHX.jpg",
+    "Capacity":" 18,422 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -81.3837,
-         28.5399
-       ]
-     },
-     "properties": {
-       "conference": "Eastern",
-       "division": "Southeast",
-       "team": "Magic",
-       "city": "Orlando",
-       "arena": "Amway Center",
-       "marker-color": "#034e9e",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -122.6690363,45.5315688 ]
+    },
+    "properties": {
+    "StadiumName":"Moda Center",
+    "website":"https://www.nba.com/blazers/",
+    "Team":"Portland Trail Blazers",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Portland%20Trail%20Blazers.png",
+    "Conference":"West",
+    "Divisions":"NORTHWEST",
+    "Year":1995,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/POR.jpg",
+    "Capacity":" 19,980 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -96.8104,
-         32.7905
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Southwest",
-       "team": "Mavericks",
-       "city": "Dallas",
-       "arena": "American Airlines Ceter",
-       "marker-color": "#ff0000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -121.5203224,38.649043 ]
+    },
+    "properties": {
+    "StadiumName":"Sleep Train Arena",
+    "website":"https://www.nba.com/kings/",
+    "Team":"Sacramento Kings",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Sacramento%20Kings.png",
+    "Conference":"West",
+    "Divisions":"PACIFIC",
+    "Year":1988,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAC.jpg",
+    "Capacity":" 17,317 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -90.0821,
-         29.949
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Southwest",
-       "team": "Pelicans",
-       "city": "New Orleans",
-       "arena": "Smoothie King Center",
-       "marker-color": "#ff0000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -98.4396753,29.4271568 ]
+    },
+    "properties": {
+    "StadiumName":"AT&T Center",
+    "website":"https://www.nba.com/spurs/",
+    "Team":"San Antonio Spurs",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/San%20Antonio%20Spurs.png",
+    "Conference":"West",
+    "Divisions":"SOUTHWEST",
+    "Year":2002,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/SAS.jpg",
+    "Capacity":" 18,581 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -95.3621,
-         29.7508
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Southwest",
-       "team": "Rockets",
-       "city": "Houston",
-       "arena": "Toyota Center",
-       "marker-color": "#ff0000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -79.3812929,43.64347 ]
+    },
+    "properties": {
+    "StadiumName":"Scotiabank Arena",
+    "website":"https://www.nba.com/raptors/",
+    "Team":"Toronto Raptors",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Toronto%20Raptors.png",
+    "Conference":"East",
+    "Divisions":"ATLANTIC",
+    "Year":1999,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/TOR.jpeg",
+    "Capacity":" 19,800 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -98.4375,
-         29.4271
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Southwest",
-       "team": "Spurs",
-       "city": "San Antonio",
-       "arena": "AT&T Center",
-       "marker-color": "#ff0000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   },
-   {
-     "type": "Feature",
-     "geometry": {
+       "coordinates":  [ -111.9032761,40.7682681 ]
+    },
+    "properties": {
+    "StadiumName":"Energy Solutions Arena",
+    "website":"https://www.nba.com/jazz/",
+    "Team":"Utah Jazz",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Utah%20Jazz.png",
+    "Conference":"West",
+    "Divisions":"NORTHWEST",
+    "Year":1991,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/Utah.jpg",
+    "Capacity":" 18,300 "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
        "type": "Point",
-       "coordinates": [
-         -90.0505,
-         35.1382
-       ]
-     },
-     "properties": {
-       "conference": "Western",
-       "division": "Southwest",
-       "team": "Grizzlies",
-       "city": "Memphis",
-       "arena": "Fedex Forum",
-       "marker-color": "#ff0000",
-       "marker-size": "medium",
-       "marker-symbol": ""
-     }
-   }
- ]
+       "coordinates":  [ -77.0229949,38.898065 ]
+    },
+    "properties": {
+    "StadiumName":"Capital One Arena",
+    "website":"https://www.nba.com/wizards/",
+    "Team":"Washington Wizards",
+    "Logo":"http://oit2.sps.nyu.edu/~tj986/Markericon/Washington%20Wizards.png",
+    "Conference":"East",
+    "Divisions":"SOUTHEAST",
+    "Year":1997,
+    "Picture":"http://oit2.sps.nyu.edu/~tj986/Markericon/Image/WAS.jpg",
+    "Capacity":" 20,356 "
+    }
+  }
+]
 }
 
 // add markers to map
@@ -639,7 +579,15 @@ geojson.features.forEach(function(marker) {
 new mapboxgl.Marker(el)
   .setLngLat(marker.geometry.coordinates)
   .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .setHTML('<b>' +marker.properties.arena +'</b> <br><b>NBA Team :</b> '+marker.properties.city +'&nbsp'+ marker.properties.team +'<br>'))
+    .setHTML(`<div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+
+                <b>${marker.properties.StadiumName}</b> <br>
+                <b>Built Year:</b> ${marker.properties.Year}<br>
+                <b>NBA Team:</b> ${marker.properties.Team}<br>
+                <b>Team Website</b> <br><a href="http://www.${marker.properties.website}">${marker.properties.website}</a><br>
+                <b>Divisions:</b> ${marker.properties.Divisions}<br>
+                <b>Conference:</b> ${marker.properties.Conference}<br>
+                <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>`))
   .addTo(map);
 })
 
