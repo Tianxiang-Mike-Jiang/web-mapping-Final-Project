@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8' />
-<title>NBA Staidum map</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
-  <link href='css/css.css' rel='stylesheet' />
-  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
-  </head>
-  <body>
-
-    <div id='sidebar'>
-  <img src="http://oit2.sps.nyu.edu/~tj986/Markericon/NBA%20logo.png" id="nbalogo">
-   <h3>The NBA Stadium Map</h3>
-
-
-    <hr/>
-
-    <div id='information'>
-<h4> Click the Buttons Below👇 <br> Fly to Each 🎯Divisions🎯 <h4>
-      <button class='flyto-button' id="ATL">📍ATLANTIC</button>
-      <br/>
-
-      <button class='flyto-button' id="CEN">📍CENTRAL</button>
-      <br/>
-
-      <button class='flyto-button' id="SE">📍SOUTHEAST</button>
-      <br/>
-
-      <button class='flyto-button' id="NW">📍NORTHWEST</button>
-      <br/>
-
-      <button class='flyto-button' id="PAC">📍PACIFIC</button>
-
-      <br/>
-
-      <button class='flyto-button' id="SW">📍SOUTHWEST</button>
-    </div>
-<hr>
-
-<div id="marker-select">
-  <button id="marker-1"></button>
-  <button id="marker-2"></button>
-  <button id="marker-3"></button>
-  <button id="marker-4"></button>
-</div>
-<h5>Click on Markers👉👉👉 <br> Explore more information on Stadiums and Teams</h5>
-
-  </div>
-
-
-    <div id='map-container'><div id="filter">
-    <button id="westernCheckbox" > Western Conference</button>
-    <button id="easternCheckbox" > Eastern Conference</button>
-    </div></div>
-<nav id="filter-group" class="filter-group"></nav>
-
-<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
- <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-     <script src='js/data.js'></script>
-         <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
- <script src='js/scripts.js'></script>
-
- </body>
+<head>
+	<meta charset='utf-8'>
+	<title>NBA Staidum map</title>
+	<meta content='initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet'>
+	<link href='css/css.css' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+</head>
+<body>
+	<div id='sidebar'>
+		<img id="nbalogo" src="http://oit2.sps.nyu.edu/~tj986/Markericon/NBA%20logo.png">
+		<h3>NBA Stadium Map</h3>
+		<hr>
+		<div id='information'>
+			<h4>Click the Buttons Below👇<br>
+			Fly to Each 🎯Divisions🎯</h4><button class='flyto-button' id="ATL">📍ATLANTIC</button><br>
+			<button class='flyto-button' id="CEN">📍CENTRAL</button><br>
+			<button class='flyto-button' id="SE">📍SOUTHEAST</button><br>
+			<button class='flyto-button' id="NW">📍NORTHWEST</button><br>
+			<button class='flyto-button' id="PAC">📍PACIFIC</button><br>
+			<button class='flyto-button' id="SW">📍SOUTHWEST</button>
+		</div>
+		<hr>
+		<h5>Choose your favourite marker icon</h5>
+		<div class="marker-icon-select">
+			<button class="marker-select" data-marker="http://oit2.sps.nyu.edu/~tj986/Markericon/icons8-marker-100.png" id="marker-1"></button> <button class="marker-select" data-marker="http://oit2.sps.nyu.edu/~tj986/Markericon/iconfinder_Social_Media_Socialmedia_network_share_socialnetwork_network-14_227040.png" id="marker-2"></button> <button class="marker-select" data-marker="http://oit2.sps.nyu.edu/~tj986/Markericon/icons8-sport-arena-64.png" id="marker-3"></button> <button class="marker-select" data-marker="http://oit2.sps.nyu.edu/~tj986/Markericon/icons8-place-marker-64.png" id="marker-4"></button>
+		</div>
+	</div>
+	<div id='map-container'>
+		<div id="filter">
+			<button id="westernCheckbox">Western Conference</button> <button id="easternCheckbox">Eastern Conference</button>
+		</div>
+	</div>
+	<nav class="filter-group" id="filter-group"></nav>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+	</script>
+	<script src='js/data.js'>
+	</script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js">
+	</script>
+	<script src='js/scripts.js'>
+	</script>
+</body>
 </html>
