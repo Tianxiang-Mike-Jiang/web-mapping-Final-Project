@@ -672,8 +672,3 @@ $('.marker-select').on('click', function() {
 	console.log(markerselectUrl)
 	$('.marker').css('background-image', `url(${markerselectUrl})`)
 })
-$('.Color').on('click', function() {
-	var backgroundPictureUrl = $(this).attr('data-background')
-	console.log(backgroundPictureUrl)
-	$('body').css('background-image', `url(${backgroundPictureUrl})`)
-})
