@@ -666,6 +666,7 @@ $('#SW').on('click', function() {
 		zoom: 5.8
 	})
 })
+
 //Change marker icons
 $('.marker-select').on('click', function() {
 	var markerselectUrl = $(this).attr('data-marker')
