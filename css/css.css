@@ -1,5 +1,5 @@
 html {
-  font-family: 'verdana', sans-serif;
+   font-family: 'Alegreya Sans SC';
 }
 body {
   margin: 0;
@@ -22,25 +22,96 @@ h3 {
 }
 h4{
   text-align: center;
-  font-family: Georgia
+  font-family: Georgia;
+  Color:#fff;
+  font-family: 'Alegreya Sans SC'
 }
-h5{font-family: Georgia;
-font-size: 20px}
+h5{ font-family: 'Alegreya Sans SC'
+font-size: 15px}
+
 .flyto-button {
-  background: #4682b4;
-  color: #FFF;
-  padding: 11px;
-  border: none;
-  font-weight: 600;
-  font-size: 1rem;
-  width: 100%;
-  margin-bottom:15px;
-  color: #FFF;
+color: #fff !important;
+border: 4px solid #FFF
+text-transform: uppercase;
+text-decoration: none;
+background: #4682b4;
+padding: 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+display: inline-block;
+
+font-weight: 600;
+font-size: 1rem;
+Width:100%;
+transition: all 0.4s ease 0s;
+ font-family: 'Alegreya Sans SC'
+}
+
+.flyto-button:hover{
+  background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
 }
 #information {
-  background: #B0C4DE;
+  background: #191339;
   padding: 15px;
   min-height: 150px;
+}
+
+#westernCheckbox{color: #C9082A !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 26px;
+border: 4px solid #C9082A !important;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+margin-right: 10px;
+font-weight: 600;
+font-size: 1rem;
+text-align: right;
+background-image: url('http://oit2.sps.nyu.edu/~tj986/Markericon/Western%20Conference.gif');
+background-repeat:no-repeat;
+background-position:left;
+background-size:contain;
+margin-bottom: 10px;
+width:300px;
+}
+
+#westernCheckbox:hover {
+color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+
+#easternCheckbox{color: #17408B !important;
+text-transform: uppercase;
+background: #ffffff;
+margin-bottom: 10px;
+padding: 26px;
+border: 4px solid #17408B !important;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+font-weight: 600;
+font-size: 1rem;
+text-align: right;
+background-image: url('http://oit2.sps.nyu.edu/~tj986/Markericon/Eastern%20Conference.gif');
+background-repeat:no-repeat;
+background-position:left;
+background-size:contain;
+width:300px;
+}
+
+#easternCheckbox:hover {
+color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
 }
 
 #logo{
@@ -67,6 +138,18 @@ font-size: 20px}
   background-color: #4682b4
 }
 
+#filter{
+  position: absolute;
+  top: 40px;
+  left: 170px;
+  z-index: 5;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+  opacity:0.9
+}
 
 .marker {
   background-image: url('icons8-marker-100.png');

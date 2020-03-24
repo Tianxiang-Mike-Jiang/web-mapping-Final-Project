@@ -651,32 +651,33 @@ new mapboxgl.Marker (el)
 })
 
 $('#westernCheckbox').on('click',function hide() {
-    let markers = document.getElementsByClassName("marker poi-western");
-    for (let i = 0; i < markers.length; i++) {
-        markers[i].style.visibility = "hidden";
-    }
-})
-
-$('#westernCheckbox').on('click',function show() {
-    let markers = document.getElementsByClassName("marker poi-western");
-    for (let i = 0; i < markers.length; i++) {
-        markers[i].style.visibility = "hidden";
-    }
-})
-
-$('#easternCheckbox').on('click',function hide() {
     let markers = document.getElementsByClassName("marker poi-eastern");
     for (let i = 0; i < markers.length; i++) {
         markers[i].style.visibility = "hidden";
+    };
+    'click',function show() {
+        let markers = document.getElementsByClassName("marker poi-western");
+        for (let i = 0; i < markers.length; i++) {
+            markers[i].style.visibility = "visible";
+        }
     }
 })
 
-function show() {
+
+
+$('#easternCheckbox').on('click',function show() {
     let markers = document.getElementsByClassName("marker poi-eastern");
     for (let i = 0; i < markers.length; i++) {
         markers[i].style.visibility = "visible";
+    };
+    'click',function hide() {
+let markers = document.getElementsByClassName("marker poi-western");
+for (let i = 0; i < markers.length; i++) {
+    markers[i].style.visibility = "hidden";
+        }
     }
-}
+})
+
 // Fly to Buttons to each divisions
   $('#ATL').on('click', function() {
     map.flyTo({

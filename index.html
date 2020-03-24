@@ -6,6 +6,8 @@
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
   <link href='css/css.css' rel='stylesheet' />
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
   </head>
   <body>
 
@@ -34,19 +36,18 @@
       <br/>
 
       <button class='flyto-button' id="SW">📍SOUTHWEST</button>
-
-      <div id="filter">
-      <button id="westernCheckbox" > Western Conference</input>
-      <button id="easternCheckbox" > Eastern Conference</input>
-      </div>
     </div>
 <hr>
+
 <h5>Click on Markers👉👉👉 <br> Explore more information on Stadiums and Teams</h5>
 
   </div>
 
 
-    <div id='map-container'></div>
+    <div id='map-container'><div id="filter">
+    <button id="westernCheckbox" > Western Conference</input>
+    <button id="easternCheckbox" > Eastern Conference</input>
+    </div></div>
 <nav id="filter-group" class="filter-group"></nav>
 
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
