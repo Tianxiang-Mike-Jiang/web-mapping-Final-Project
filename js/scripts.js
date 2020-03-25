@@ -615,32 +615,40 @@ nbawestern.features.forEach(function(marker) {
 </style>
                 `)).addTo(map);
 })
-$('#westernCheckbox').on('click', function hide() {
-  let markers = document.getElementsByClassName("marker poi-eastern");
-  for (let i = 0; i < markers.length; i++) {
-    markers[i].style.visibility = "hidden";
-  };
-  'click',
-  function show() {
-    let markers = document.getElementsByClassName("marker poi-western");
-    for (let i = 0; i < markers.length; i++) {
-      markers[i].style.visibility = "visible";
+
+$('#westernCheckbox').on('click',function myfunction1() {
+		var checkBox1 = document.getElementById("westernCheckbox");
+    var markers1 = document.getElementsByClassName("marker poi-western");
+if(checkBox1.checked==true) {
+    for (let i = 0; i < markers1.length; i++) {
+      markers1[i].style.visibility = "visible";
     }
+  }else
+	{
+  for (let i = 0; i < markers1.length; i++) {
+    markers1[i].style.visibility = "hidden";
   }
-})
-$('#easternCheckbox').on('click', function show() {
-  let markers = document.getElementsByClassName("marker poi-eastern");
-  for (let i = 0; i < markers.length; i++) {
-    markers[i].style.visibility = "visible";
-  };
-  'click',
-  function hide() {
-    let markers = document.getElementsByClassName("marker poi-western");
-    for (let i = 0; i < markers.length; i++) {
-      markers[i].style.visibility = "hidden";
+}
+}
+)
+
+$('#easternCheckbox').on('click',function myfunction2() {
+		var checkBox2 = document.getElementById("easternCheckbox");
+    var markers2 = document.getElementsByClassName("marker poi-eastern");
+if(checkBox2.checked==true) {
+    for (let i = 0; i < markers2.length; i++) {
+      markers2[i].style.visibility = "visible";
     }
+  }else
+	{
+  for (let i = 0; i < markers2.length; i++) {
+    markers2[i].style.visibility = "hidden";
   }
-})
+}
+}
+)
+
+
 // Fly to Buttons to each divisions
 $('#ATL').on('click', function() {
   map.flyTo({
