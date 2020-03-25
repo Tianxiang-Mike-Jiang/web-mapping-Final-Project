@@ -35,6 +35,11 @@ h6 {
 	font-size: 17px;
   text-align: justify;
 }
+h7 {
+	font-family: 'Alegreya Sans SC';
+	font-size: 13px;
+  text-align: justify;
+}
 .flyto-button {
 	color: #fff !important;
 	border: 4px solid #FFF text-transform: uppercase;
@@ -62,6 +67,9 @@ h6 {
 	padding: 15px;
 	min-height: 150px;
 }
+
+
+
 #westernCheckbox {
 	color: #C9082A !important;
 	text-transform: uppercase;

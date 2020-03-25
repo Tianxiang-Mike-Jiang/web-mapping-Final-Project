@@ -599,7 +599,11 @@ nbawestern.features.forEach(function(marker) {
                 <b>Team Website</b> <br><a href="http://www.${marker.properties.website}">${marker.properties.website}</a><br>
                 <b>Divisions:</b> ${marker.properties.Divisions}<br>
                 <b>Conference:</b> ${marker.properties.conference}<br>
-                <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>
+                <div id='zoom' style="background-image:url('${marker.properties.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain;padding: 50px;
+                transition: transform .2s; /* Animation */
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;}"></div>
 
                 `)).addTo(map);
 })
