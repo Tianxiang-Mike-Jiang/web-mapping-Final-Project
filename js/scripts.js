@@ -576,23 +576,29 @@ nbaeastern.features.forEach(function(marker) {
   new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).setPopup(new mapboxgl.Popup({
       offset: 25
     }) // add popups
-    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100px; width:210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
-                <h6><b>${marker.properties.StadiumName}</b> <br></h6>
-                <h1><b>Built Year:</b> ${marker.properties.Year}<br>
-                <b>NBA Team:</b> ${marker.properties.Team}<br>
-                <b>Team Website</b> <br><a href="http://www.${marker.properties.website}">${marker.properties.website}</a><br>
-                <b>Divisions:</b> ${marker.properties.Divisions}<br>
-                <b>Conference:</b> ${marker.properties.conference}<br><br>
+                <h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
+
+                 <h1><b>Built Year:</b> ${marker.properties.Year}<br>
+                 <b>NBA Team:</b> ${marker.properties.Team}<br>
+
+                 <b>Team Website:</b> &nbsp;<a href="http://www.${marker.properties.website}">${marker.properties.website}</a>
+                    <br>
+
+                 <b>Divisions:</b> ${marker.properties.Divisions}<br>
+                <b>Conference:</b> ${marker.properties.conference}
+                <br>
+                <br>
 								Move the mouse to picture zoom in</h1>
-                <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：100%;background-repeat:no-repeat; background-position:center; background-size:contain "></div>
+                <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：150px; width: 210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div>
 </body>
 <style>
 #image-zoom:hover {
   transform: scale(2.5);
 }
-</style>
-                `)).addTo(map);
+
+</style>  `)).addTo(map);
 })
 nbawestern.features.forEach(function(marker) {
   // create a HTML element for each feature
@@ -602,7 +608,7 @@ nbawestern.features.forEach(function(marker) {
   new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).setPopup(new mapboxgl.Popup({
       offset: 25
     }) // add popups
-    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：150px; width:210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100px; width:210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
                 <h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
 
@@ -642,11 +648,15 @@ $('#westernCheckbox').on('click', function myfunction1() {
       markers1[i].style.visibility = "hidden";
       $('input[name=westernCheck]').prop('checked', true);
     };
+  };
+//When hide the marker turn button to gray
+  if (checkBox1.checked == true) {$('#westernCheckbox').css('filter', 'grayscale(100%)')
+}else {$('#westernCheckbox').css('filter', 'grayscale(0%)')
 
   }
 })
 
-
+//When click button show/hide the marker and check/uncheck the checkBox
 $('#easternCheckbox').on('click', function myfunction2() {
   var checkBox2 = document.getElementById("easternCheck");
   var markers2 = document.getElementsByClassName("marker poi-eastern");
@@ -661,8 +671,12 @@ $('#easternCheckbox').on('click', function myfunction2() {
       $('input[name=easternCheck]').prop('checked', true);
     };
 
-  }
-})
+  };
+//When hide the marker turn button to gray
+  if (checkBox2.checked == true) {$('#easternCheckbox').css('filter', 'grayscale(100%)')
+}else {$('#easternCheckbox').css('filter', 'grayscale(0%)')
+
+}})
 
 
 // Fly to Buttons to each divisions
