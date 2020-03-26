@@ -1,7 +1,7 @@
 // My mapboxGL token
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWppYW5nMTEwIiwiYSI6ImNrNnR2bnZmNTAzZ3Azb3Izd3ExOW9obmUifQ.1gPI_5WBiSt3GwqrGk_S8g';
 // Initial center point and zoom level
-var initialCenterPoint = [-98.1875746, 30.1911332]
+var initialCenterPoint = [-96.3875746, 30.1911332]
 var initialZoom = 3.4
 // Create an object to hold the initialization options for a map
 var initOptions = {
@@ -576,9 +576,10 @@ nbaeastern.features.forEach(function(marker) {
   new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).setPopup(new mapboxgl.Popup({
       offset: 25
     }) // add popups
-    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100px; width:210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：10px; width:290px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
-                <h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
+                <table>
+                <tr><td><h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
 
                  <h1><b>Built Year:</b> ${marker.properties.Year}<br>
                  <b>NBA Team:</b> ${marker.properties.Team}<br>
@@ -588,17 +589,18 @@ nbaeastern.features.forEach(function(marker) {
 
                  <b>Divisions:</b> ${marker.properties.Divisions}<br>
                 <b>Conference:</b> ${marker.properties.conference}
-                <br>
-                <br>
-								Move the mouse to picture zoom in</h1>
-                <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：150px; width: 210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div>
+
+								</h1></td>
+                <td><div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：50px; width: 120px;background-repeat:no-repeat; background-position:center; background-size:contain "></div></td>
+                </table>
 </body>
 <style>
 #image-zoom:hover {
   transform: scale(2.5);
 }
 
-</style>  `)).addTo(map);
+</style>
+             `)).addTo(map);
 })
 nbawestern.features.forEach(function(marker) {
   // create a HTML element for each feature
@@ -608,9 +610,10 @@ nbawestern.features.forEach(function(marker) {
   new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).setPopup(new mapboxgl.Popup({
       offset: 25
     }) // add popups
-    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：100px; width:210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：10px; width:290px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
-                <h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
+                <table>
+                <tr><td><h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
 
                  <h1><b>Built Year:</b> ${marker.properties.Year}<br>
                  <b>NBA Team:</b> ${marker.properties.Team}<br>
@@ -620,10 +623,10 @@ nbawestern.features.forEach(function(marker) {
 
                  <b>Divisions:</b> ${marker.properties.Divisions}<br>
                 <b>Conference:</b> ${marker.properties.conference}
-                <br>
-                <br>
-								Move the mouse to picture zoom in</h1>
-                <div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：150px; width: 210px;background-repeat:no-repeat; background-position:center; background-size:contain "></div>
+
+								</h1></td>
+                <td><div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：50px; width: 120px;background-repeat:no-repeat; background-position:center; background-size:contain "></div></td>
+                </table>
 </body>
 <style>
 #image-zoom:hover {
