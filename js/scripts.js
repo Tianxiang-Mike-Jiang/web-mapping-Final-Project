@@ -616,40 +616,40 @@ nbawestern.features.forEach(function(marker) {
                 `)).addTo(map);
 })
 
-$('#westernCheckbox').on('click',function myfunction1() {
-var checkBox1 = document.getElementById("westernCheck");
-var markers1 = document.getElementsByClassName("marker poi-western");
-if(checkBox1.checked==true) {
+$('#westernCheckbox').on('click', function myfunction1() {
+  var checkBox1 = document.getElementById("westernCheck");
+  var markers1 = document.getElementsByClassName("marker poi-western");
+  if (checkBox1.checked == true) {
     for (let i = 0; i < markers1.length; i++) {
-			markers1[i].style.visibility = "visible";
+      markers1[i].style.visibility = "visible";
       $('input[name=westernCheck]').prop('checked', false);
     }
-  }else
-	{
-  for (let i = 0; i < markers1.length; i++) {
-		 markers1[i].style.visibility = "hidden";
-    	$('input[name=westernCheck]').prop('checked', true);
-  };
+  } else {
+    for (let i = 0; i < markers1.length; i++) {
+      markers1[i].style.visibility = "hidden";
+      $('input[name=westernCheck]').prop('checked', true);
+    };
 
-}})
+  }
+})
 
 
-$('#easternCheckbox').on('click',function myfunction2() {
-		var checkBox2 = document.getElementById("easternCheck");
-    var markers2 = document.getElementsByClassName("marker poi-eastern");
-		if(checkBox2.checked==true) {
-		    for (let i = 0; i < markers2.length; i++) {
-					markers2[i].style.visibility = "visible";
-		      $('input[name=easternCheck]').prop('checked', false);
-		    }
-		  }else
-			{
-		  for (let i = 0; i < markers2.length; i++) {
-				 markers2[i].style.visibility = "hidden";
-		    	$('input[name=easternCheck]').prop('checked', true);
-		  };
+$('#easternCheckbox').on('click', function myfunction2() {
+  var checkBox2 = document.getElementById("easternCheck");
+  var markers2 = document.getElementsByClassName("marker poi-eastern");
+  if (checkBox2.checked == true) {
+    for (let i = 0; i < markers2.length; i++) {
+      markers2[i].style.visibility = "visible";
+      $('input[name=easternCheck]').prop('checked', false);
+    }
+  } else {
+    for (let i = 0; i < markers2.length; i++) {
+      markers2[i].style.visibility = "hidden";
+      $('input[name=easternCheck]').prop('checked', true);
+    };
 
-		}})
+  }
+})
 
 
 // Fly to Buttons to each divisions
