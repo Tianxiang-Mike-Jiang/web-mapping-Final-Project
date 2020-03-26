@@ -576,31 +576,31 @@ nbaeastern.features.forEach(function(marker) {
   new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).setPopup(new mapboxgl.Popup({
       offset: 25
     }) // add popups
-    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：10px; width:290px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：10px; width:300px;margin-left: auto; margin-right: auto; width: 50%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
                 <table>
                 <tr><td><h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
 
-                 <h1><b>Built Year:</b> ${marker.properties.Year}<br>
-                 <b>NBA Team:</b> ${marker.properties.Team}<br>
+                <h1><b>Built Year:</b> ${marker.properties.Year}<br>
+                <b>NBA Team:</b> ${marker.properties.Team}<br>
 
-                 <b>Team Website:</b> &nbsp;<a href="http://www.${marker.properties.website}">${marker.properties.website}</a>
-                    <br>
+                <b>Team Website:</b> &nbsp;<a href="http://www.${marker.properties.website}">${marker.properties.website}</a>
+                <br>
 
-                 <b>Divisions:</b> ${marker.properties.Divisions}<br>
+                <b>Divisions:</b> ${marker.properties.Divisions}<br>
                 <b>Conference:</b> ${marker.properties.conference}
 
 								</h1></td>
                 <td><div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：50px; width: 120px;background-repeat:no-repeat; background-position:center; background-size:contain "></div></td>
                 </table>
-</body>
-<style>
-#image-zoom:hover {
-  transform: scale(2.5);
-}
+                </body>
+                <style>
+                #image-zoom:hover {
+                  transform: scale(2.5);
+                }
 
-</style>
-             `)).addTo(map);
+                </style>
+                `)).addTo(map);
 })
 nbawestern.features.forEach(function(marker) {
   // create a HTML element for each feature
@@ -610,7 +610,7 @@ nbawestern.features.forEach(function(marker) {
   new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).setPopup(new mapboxgl.Popup({
       offset: 25
     }) // add popups
-    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：10px; width:290px;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
+    .setHTML(`<body><div id='logo' style="background-image:url('${marker.properties.Logo}'); height：10px; width:300px;margin-left: auto; margin-right: auto; width: 50%;background-repeat:no-repeat; background-position:center; background-size:contain "></div><br>
 
                 <table>
                 <tr><td><h1 style="font-size:18px"><b>${marker.properties.StadiumName}</b> </h1>
@@ -627,13 +627,13 @@ nbawestern.features.forEach(function(marker) {
 								</h1></td>
                 <td><div id='image-zoom' style="background-image:url('${marker.properties.Picture}'); height：50px; width: 120px;background-repeat:no-repeat; background-position:center; background-size:contain "></div></td>
                 </table>
-</body>
-<style>
-#image-zoom:hover {
-  transform: scale(2.5);
-}
+                </body>
+                <style>
+                #image-zoom:hover {
+                  transform: scale(2.5);
+                }
 
-</style>
+                </style>
                 `)).addTo(map);
 })
 
