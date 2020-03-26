@@ -14,6 +14,7 @@ var initOptions = {
 var map = new mapboxgl.Map(initOptions);
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
+//Data
 var nbaeastern = {
   "type": "FeatureCollection",
   "features": [{
@@ -616,6 +617,7 @@ nbawestern.features.forEach(function(marker) {
                 `)).addTo(map);
 })
 
+//When click button show/hide the marker and check/uncheck the checkBox
 $('#westernCheckbox').on('click', function myfunction1() {
   var checkBox1 = document.getElementById("westernCheck");
   var markers1 = document.getElementsByClassName("marker poi-western");
