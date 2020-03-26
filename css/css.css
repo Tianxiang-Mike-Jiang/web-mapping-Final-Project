@@ -12,7 +12,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 350px;
+  left: 400px;
 }
 
 .mapboxgl-marker:hover {
@@ -34,7 +34,8 @@ h4 {
 
 h5 {
   font-family: 'Actor';
-  font-size: 18px
+  font-size: 18px;
+	text-align:center;
 }
 
 h6 {
@@ -139,7 +140,7 @@ h1 {
 #filter {
   position: absolute;
   top: 40px;
-  left: 170px;
+  left: 18%;
   z-index: 5;
   padding: 5px;
   text-align: center;
@@ -176,7 +177,7 @@ h1 {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 350px;
+  width: 400px;
   background-color: #17408B;
   color: #FFF;
   padding: 25px;
@@ -227,7 +228,7 @@ h1 {
   background-size: contain;
   height: 50px;
   width: 50px;
-  margin-right: 18px;
+  margin-right: 35px;
   margin-top: 10px;
   margin-bottom: 20px
 }
@@ -239,7 +240,7 @@ h1 {
   background-size: contain;
   height: 50px;
   width: 50px;
-  margin-right: 18px;
+  margin-right: 35px;
   margin-top: 10px;
   margin-bottom: 20px
 }
@@ -251,9 +252,10 @@ h1 {
   background-size: contain;
   height: 50px;
   width: 50px;
-  margin-right: 18px;
+  margin-right: 35px;
   margin-top: 10px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+
 }
 
 #marker-4 {
@@ -263,7 +265,7 @@ h1 {
   background-size: contain;
   height: 50px;
   width: 50px;
-  margin-right: 18px;
+  margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 20px
 }
