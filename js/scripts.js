@@ -644,16 +644,19 @@ $('#westernCheckbox').on('click', function myfunction1() {
   if (checkBox1.checked == true) {
     for (let i = 0; i < markers1.length; i++) {
       markers1[i].style.visibility = "visible";
-      $('input[name=westernCheck]').prop('checked', false);}
+      $('input[name=westernCheck]').prop('checked', false);
+    }
   } else {
     for (let i = 0; i < markers1.length; i++) {
       markers1[i].style.visibility = "hidden";
       $('input[name=westernCheck]').prop('checked', true);
     };
   };
-//When hide the marker turn button to gray
-  if (checkBox1.checked == true) {$('#westernCheckbox').css('filter', 'grayscale(100%)')
-}else {$('#westernCheckbox').css('filter', 'grayscale(0%)')
+  //When hide the marker turn button to gray
+  if (checkBox1.checked == true) {
+    $('#westernCheckbox').css('filter', 'grayscale(100%)')
+  } else {
+    $('#westernCheckbox').css('filter', 'grayscale(0%)')
 
   }
 })
@@ -674,11 +677,14 @@ $('#easternCheckbox').on('click', function myfunction2() {
     };
 
   };
-//When hide the marker turn button to gray
-  if (checkBox2.checked == true) {$('#easternCheckbox').css('filter', 'grayscale(100%)')
-}else {$('#easternCheckbox').css('filter', 'grayscale(0%)')
+  //When hide the marker turn button to gray
+  if (checkBox2.checked == true) {
+    $('#easternCheckbox').css('filter', 'grayscale(100%)')
+  } else {
+    $('#easternCheckbox').css('filter', 'grayscale(0%)')
 
-}})
+  }
+})
 
 
 // Fly to Buttons to each divisions
