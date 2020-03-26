@@ -617,6 +617,7 @@ nbawestern.features.forEach(function(marker) {
 #image-zoom:hover {
   transform: scale(2.5);
 }
+
 </style>
                 `)).addTo(map);
 })
