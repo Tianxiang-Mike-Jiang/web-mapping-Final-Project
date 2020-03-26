@@ -44,21 +44,13 @@
 			-NBA. (n.d.). Retrieved March 24, 2020, from <a href url="http://www.sportmapworld.com/map/basketball/north-america/nba/">http://www.sportmapworld.com/map/basketball/north-america/nba/</a>
 	</div>
 	<div id='map-container'>
-		<div id="filter">
-			<table><tr>
-				<td><input type="checkbox" id="westernCheckbox" name="westernCheckbox" checked>
-							<label class="westernCheckbox" for="westernCheckbox">
-								<div id="trick_mark"></div>
-							</label>
-						</input>
-						<tr>
-						<input type="checkbox" id="easternCheckbox" checked>
-							<label for="easternCheckbox">
-								<div id="trick_marker"></div>
-							</label>
-						</input>
-		</div>
-	</div>
+				<div id="filter">
+					<button id="westernCheckbox">Western Conference</button> <button id="easternCheckbox">Eastern Conference</button>
+					<input type="checkbox" id="westernCheck" name="westernCheck" >
+					 <input type="checkbox" id="easternCheck" name="easternCheck" >
+				</div>
+
+
 	<nav class="filter-group" id="filter-group"></nav>
 	<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js">
 	</script>

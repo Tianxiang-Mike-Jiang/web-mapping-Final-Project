@@ -78,248 +78,77 @@ h1 {
   padding: 15px;
   min-height: 150px;
 }
-#westernCheckbox
-{
-    display: none;
-}
 
-.westernCheckbox
-{
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: #f72414;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    box-shadow: 0 7px 10px #ffbeb8;
-    cursor: pointer;
-    transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease box-shadow;
-    overflow: hidden;
-    z-index: 1;
-}
 
-.westernCheckbox:before
-{
-    content: "";
-    position: absolute;
-		top: 26px;
-    right: 0;
-    left: 0;
-
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    background-color: #fff;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    box-shadow: inset 0 7px 10px #ffbeb8;
-    transition: 0.2s ease width, 0.2s ease height;
-}
-
-.westernCheckbox:hover:before
-{
-    width: 39px;
-    height: 39px;
-    box-shadow: inset 0 7px 10px #ff9d96;
-}
-
-.westernCheckbox:active
-{
-    transform: translateY(-50%) scale(0.9);
-}
-
-#tick_mark
-{
-    position: absolute;
-    top: -1px;
-    right: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    margin-left: 14px;
-    transform: rotateZ(-40deg);
-}
-
-#tick_mark:before, #tick_mark:after
-{
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    border-radius: 2px;
-    opacity: 0;
-    transition: 0.2s ease transform, 0.2s ease opacity;
-}
-
-#tick_mark:before
-{
-    left: 0;
-    bottom: 0;
-    width: 10px;
-    height: 30px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.23);
-    transform: translateY(-68px)
-}
-
-#tick_mark:after
-{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.23);
-    transform: translateX(78px)
-}
-
-#westernCheckbox:checked + .westernCheckbox
-{
+#westernCheckbox {
+    color: #C9082A !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 26px;
+    border: 4px solid #C9082A !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: right;
     background-image: url('http://oit2.sps.nyu.edu/~tj986/Markericon/Western%20Conference.gif');
-		background-repeat: no-repeat;
-	  background-position: left;
-	  background-size: contain;
-    box-shadow: 0 7px 10px #000;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin-bottom: 10px;
+    width: 300px;
 }
-
-#westernCheckbox:checked + .westernCheckbox:before
-{
-    width: 0;
-    height: 0;
+#westernCheckbox:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #fff !important;
+    transition: all 0.3s ease 0s;
 }
-
-#westernCheckbox:checked + .westernCheckbox #tick_mark:before, #westernCheckbox:checked + .westernCheckbox #tick_mark:after
-{
-    transform: translate(0);
-    opacity: 1;
-}
-
-#easternCheckbox
-{
-    display: none;
-}
-
-label
-{
-    position: absolute;
-    top: 120px;
-    right: 10px;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: #17408B;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    box-shadow: 0 7px 10px #000;
-    cursor: pointer;
-    transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease box-shadow;
-    overflow: hidden;
-    z-index: 1;
-}
-
-label:before
-{
-    content: "";
-    position: absolute;
-    top: 26px;
-    right: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    background-color: #fff;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    box-shadow: inset 0 7px 10px #ffbeb8;
-    transition: 0.2s ease width, 0.2s ease height;
-}
-
-label:hover:before
-{
-    width: 39px;
-    height: 39px;
-    box-shadow: inset 0 7px 10px #ff9d96;
-}
-
-label:active
-{
-    transform: translateY(-50%) scale(0.9);
-}
-
-#tick_marker
-{
-    position: absolute;
-    top: -1px;
-    right: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    margin-left: 14px;
-    transform: rotateZ(-40deg);
-}
-
-#tick_marker:before, #tick_marker:after
-{
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    border-radius: 2px;
-    opacity: 0;
-    transition: 0.2s ease transform, 0.2s ease opacity;
-}
-
-#tick_marker:before
-{
-    left: 0;
-    bottom: 0;
-    width: 10px;
-    height: 30px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.23);
-    transform: translateY(-68px)
-}
-
-#tick_marker:after
-{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.23);
-    transform: translateX(78px)
-}
-
-#easternCheckbox:checked + label
-{
+#easternCheckbox {
+    color: #17408B !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 26px;
+    border: 4px solid #17408B !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: right;
     background-image: url('http://oit2.sps.nyu.edu/~tj986/Markericon/Eastern%20Conference.gif');
-		background-repeat: no-repeat;
-	  background-position: left;
-	  background-size: contain;
-    box-shadow: 0 7px 10px #000;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    width: 300px;
 }
-
-#easternCheckbox:checked + label:before
-{
-    width: 0;
-    height: 0;
+#easternCheckbox:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #fff !important;
+    transition: all 0.3s ease 0s;
 }
-
-#easternCheckbox:checked + label #tick_marker:before, #easternCheckbox:checked + label #tick_marker:after
-{
-    transform: translate(0);
-    opacity: 1;
-}
-
-
-
-#filter{
-	top:50px;
+#filter {
 	position: absolute;
-	right: 550px;
-	background-color: #000;
+	top: 40px;
+	left: 170px;
+	z-index: 5;
+	padding: 5px;
+	text-align: center;
+	font-family: 'Roboto', 'sans-serif';
+	line-height: 30px;
+	padding-left: 10px;
+	opacity: 0.9
+}
 
+#westernCheck{
+	opacity: 0
+}
+#easternCheck{
+	opacity: 0
 }
 #nbalogo {
   width: 100px
