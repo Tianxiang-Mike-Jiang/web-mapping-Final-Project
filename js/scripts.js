@@ -349,7 +349,7 @@ var nbawestern = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-93.5971038, 34.9922688]
+      "coordinates": [-95.3629684, 29.7501745]
     },
     "properties": {
       "StadiumName": "Toyota Center",
