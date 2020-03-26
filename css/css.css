@@ -1,5 +1,5 @@
 html {
-  font-family: 'Alegreya Sans SC';
+  font-family: 'Actor';
 }
 
 body {
@@ -29,22 +29,22 @@ h4 {
   text-align: center;
   font-family: Georgia;
   Color: #fff;
-  font-family: 'Alegreya Sans SC'
+  font-family: 'Actor'
 }
 
 h5 {
-  font-family: 'Alegreya Sans SC';
+  font-family: 'Actor';
   font-size: 18px
 }
 
 h6 {
-  font-family: 'Alegreya Sans SC';
+  font-family: 'Actor';
   font-size: 17px;
   text-align: justify;
 }
 
 h1 {
-  font-family: 'Alegreya Sans SC';
+  font-family: 'Actor';
   font-size: 13px;
   text-align: left;
 }
@@ -62,7 +62,7 @@ h1 {
   font-size: 1rem;
   Width: 100%;
   transition: all 0.4s ease 0s;
-  font-family: 'Alegreya Sans SC'
+  font-family: 'Actor'
 }
 
 .flyto-button:hover {
