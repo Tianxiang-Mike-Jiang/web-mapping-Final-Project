@@ -14,6 +14,10 @@ var initOptions = {
 var map = new mapboxgl.Map(initOptions);
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
+
+// disable map zoom when using scroll
+map.scrollZoom.disable();
+
 //Data
 var nbaeastern = {
   "type": "FeatureCollection",
